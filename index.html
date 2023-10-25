@@ -41,7 +41,7 @@
     <script src="animation.js" type="text/javascript"></script>
   </head>
   <body>
-    <header class="fixed-top header">
+    <header class="fixed-top header" id="homepage">
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <a class="navbar-brand" href="#">
           <img
@@ -63,32 +63,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">intro</a>
-            <a class="nav-link" href="#">photos</a>
-            <a class="nav-link" href="#">information</a>
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="#homepage">Home</a>
+            <a class="nav-link" href="#introduction">Intro</a>
+            <a class="nav-link" href="#photos">Photos</a>
+            <a class="nav-link" href="#">Information</a>
+            <a class="nav-link" href="#">Contact</a>
           </ul>
-          <form class="form-inline my-2 mr-3 my-lg-0">
-            <button
-              class="btn btn-outline-light my-2 my-sm-0 button-login"
-              type="button"
-            >
-              Login
-            </button>
-          </form>
+          <button
+            class="btn btn-outline-light my-2 my-sm-0 button-login"
+            type="button"
+          >
+            Login
+          </button>
         </div>
       </nav>
     </header>
     <div
-      id="carouselExampleSlidesOnly"
+      id="carouselSlidesOnly"
       class="carousel slide carousel-fade"
       data-ride="carousel"
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="item-text animate__animated animate__fadeIn">
-            <div class="heading"><h3>Lorem Ipsum</h3></div>
+            <div class="heading"><h1>Heading</h1></div>
             <div class="caption">
               <h4>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -145,7 +143,7 @@
       </div>
     </div>
     <main>
-      <div class="content-section-holder">
+      <div class="content-section-holder" id="introduction">
         <div class="content-wrapper">
           <div class="content">
             <div class="content-img"><img src="" alt="" /></div>
@@ -164,7 +162,7 @@
           </div>
         </div>
       </div>
-      <div class="bento-holder">
+      <div class="bento-holder" id="photos">
         <div class="bento-wrapper">
           <div class="item-1">
             <div class="overlay"><h1>Text</h1></div>
@@ -183,6 +181,18 @@
           </div>
         </div>
       </div>
+      <div class="banner">
+        <div class="banner-text">
+          <h2>Heading</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+      </div>
     </main>
+    <footer></footer>
   </body>
 </html>
