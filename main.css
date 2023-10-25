@@ -78,7 +78,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 1300px;
+  height: 900px;
   background-color: #adb5bd;
 }
 
@@ -88,13 +88,54 @@ main {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 600px;
+  height: 800px;
   background-color: #ced4da;
 }
 
 .content {
-  width: 650px;
-  height: 450px;
+  width: 700px;
+  height: 500px;
   margin: 0px 30px 0px 30px;
   background-color: #e9ecef;
+}
+
+/* grid ↓ */
+
+.bento-holder {
+  width: 100%;
+  height: 850px;
+  background-color: #495057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bento-wrapper {
+  display: grid;
+  grid-template-columns: 600px 995px;
+  grid-template-rows: 55% 45%;
+  gap: 5px;
+  width: 1600px;
+  height: 700px;
+  background-color: #e9ecef;
+}
+
+.item1 {
+  background-color: red;
+}
+.item2 {
+  background-color: blue;
+}
+.item3 {
+  background-color: purple;
+  width: 50%;
+}
+.item4 {
+  background-color: green;
+}
+.item5 {
+  background-color: orange;
+}
+.item6 {
+  background-color: orangered;
 }
