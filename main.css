@@ -8,12 +8,7 @@
   --background-color: #f8f9fa;
   --wrapper-color: #e9ecef;
   --content-color: #dee2e6;
-  --stickyNav-color: #222222;
-}
-
-header {
-  margin: 0px 100px 0px 100px;
-  transition: 0.5s;
+  --stickyNav-color: #222222c5;
 }
 
 .nav-link {
@@ -98,7 +93,7 @@ header {
   background-color: var(--stickyNav-color);
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  margin: 0px 580px 0px 580px;
+  /* margin: 0px 580px 0px 580px; */
 }
 
 .sticky nav {
@@ -109,12 +104,14 @@ header {
   background-color: transparent;
   height: 76px;
   transition: 0.5s;
+  margin: 0px 100px 0px 100px;
 }
 /*  ↑ sticky navbar effect*/
 /*  ↓ main page */
 
 main {
-  height: 3400px;
+  width: 100%;
+  height: 3200px;
   background-color: #ffffff;
 }
 
@@ -244,4 +241,161 @@ main {
   text-align: center;
   color: var(--text-color);
   background-color: #222;
+}
+
+/* ! cart section ↓ */
+
+.container-cart * {
+  margin: 0;
+  padding: 0;
+  color: #050505;
+  font-family: jf-font;
+}
+
+.container-cart {
+  background-color: #eaebea;
+  height: 930px;
+  /* VH */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cart {
+  background-color: transparent;
+  width: 1300px;
+  height: 800px;
+}
+
+.title h4 {
+  font-family: jf-font;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 30px 0px 30px 0px;
+}
+
+.title p {
+  font-family: jf-font;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* .decoration-line {
+  width: 1230px;
+  height: 2px;
+  background-color: #9e9e9e;
+  margin: auto;
+} */
+
+.item-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mid {
+  background-color: #dadcda;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.description {
+  width: 360px;
+  height: 500px;
+  margin-top: 40px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #eaebea;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+/* pro */
+
+.promo h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.promo p {
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.check-icon {
+  width: 8%;
+  height: 8%;
+}
+
+.item-list {
+  width: 270px;
+  margin-left: 90px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list {
+  display: inline-flex;
+  gap: 1em;
+}
+
+.list p,
+svg {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.button-1 {
+  position: relative;
+  bottom: 0px;
+  top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.button {
+  position: relative;
+  bottom: 0px;
+  top: 130px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.button a {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #404e4f;
+  font-family: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.button-1 a {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #404e4f;
+  font-family: jf-font;
+  font-family: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover,
+.button-1 a:hover {
+  color: white;
+  background-color: #404e4f;
+  text-decoration: none;
+}
+
+/* ! cart section ↑  */
+
+.title img {
+  width: 75px;
+  height: 75px;
 }
