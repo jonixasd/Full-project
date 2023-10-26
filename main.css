@@ -3,6 +3,11 @@
 /* color:#222 (good looking gray */
 /* todo: bootstrap's background-color need adjust(transparent) */
 
+html {
+  /* * smooth scrolling */
+  scroll-behavior: smooth;
+}
+
 :root {
   --text-color: white;
   --background-color: #f8f9fa;
@@ -93,7 +98,7 @@
   background-color: var(--stickyNav-color);
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  /* margin: 0px 580px 0px 580px; */
+  margin: 0px 580px 0px 580px;
 }
 
 .sticky nav {
