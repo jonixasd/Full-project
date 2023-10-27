@@ -17,7 +17,7 @@ html {
 }
 
 .nav-link {
-  margin: 0px 5px 0px 5px;
+  margin: 0px 8px 0px 8px;
 }
 
 .navbar-brand {
@@ -33,11 +33,22 @@ html {
   font-weight: 600;
   transition: 0.2s;
 }
+
+.button-parent {
+  width: 85px;
+  margin-right: 20px;
+}
+
+.button-parent button {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /* navbar ↑  */
 /* carousel ↓  */
 
 .item-text {
-  z-index: 9999;
+  z-index: 999;
   height: 200px;
   width: fit-content;
   position: absolute;
@@ -84,11 +95,7 @@ html {
   font-weight: 600;
 }
 
-.heading p .span-1 {
-  color: #8ac247;
-}
-
-.heading p .span-2 {
+.heading p span {
   color: #8ac247;
 }
 
@@ -150,21 +157,17 @@ html {
 
 .sticky {
   background-color: var(--stickyNav-color);
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  margin: 0px 580px 0px 580px;
+  border-radius: 200px;
+  margin: 12px 530px 0px 530px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.sticky nav {
-  transition: 0.5s;
-}
-
 header {
-  background-color: transparent;
+  background-color: #222;
   height: 76px;
   transition: 0.5s;
-  margin: 0px 100px 0px 100px;
+  border-radius: 200px;
+  margin: 12px 300px 0px 300px;
 }
 /*  ↑ sticky navbar effect*/
 /*  ↓ main page */
