@@ -73,25 +73,32 @@ html {
   background-color: #ffffff;
 }
 
-.scrollDown-2 {
+.scrollDown-hover:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  background-color: #050505;
+  transform: scale(2);
+}
+
+/* .scrollDown-2 {
   display: flex;
   justify-content: center;
   width: 200px;
   height: 90px;
   border-radius: 0% 0% 500px 500px;
   background-color: #222222;
-}
+} */
 
 .scrollDown h5 {
   margin-top: 30px;
   text-align: center;
   color: #222;
 }
-.scrollDown-2 h5 {
+/* .scrollDown-2 h5 {
   margin-top: 30px;
   text-align: center;
   color: #ffffff;
-}
+} */
 /*  carousel */
 
 .sticky {
