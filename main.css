@@ -37,11 +37,12 @@ html {
 /* carousel ↓  */
 
 .item-text {
+  z-index: 9999;
   height: 200px;
   width: fit-content;
   position: absolute;
-  bottom: 350px;
-  right: 350px;
+  bottom: 380px;
+  right: 835px;
   overflow-wrap: break-word;
   /* text-wrap */
 }
@@ -71,17 +72,32 @@ html {
   height: 100%;
   background: rgb(0, 0, 0);
   background: linear-gradient(
-    180deg,
+    90deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
 
-.heading,
-.caption {
-  color: var(--text-color);
-  font-size: 50px;
-  text-align: right;
+.heading p {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.heading p .span-1 {
+  color: #8ac247;
+}
+
+.heading p .span-2 {
+  color: #8ac247;
+}
+
+.caption p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.8px;
 }
 
 .scrollDown-container {
@@ -97,7 +113,15 @@ html {
   width: 200px;
   height: 90px;
   border-radius: 500px 500px 0% 0%;
-  background-color: #ffffff;
+  background-color: #ffffff93;
+}
+
+.scrollDown h5 {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #222;
 }
 
 .scrollDown-hover:hover {
@@ -116,16 +140,12 @@ html {
   background-color: #222222;
 } */
 
-.scrollDown h5 {
-  margin-top: 30px;
-  text-align: center;
-  color: #222;
-}
 /* .scrollDown-2 h5 {
   margin-top: 30px;
   text-align: center;
   color: #ffffff;
 } */
+
 /*  carousel */
 
 .sticky {
