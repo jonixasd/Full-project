@@ -8,7 +8,8 @@ html {
 }
 
 :root {
-  --text-color: white;
+  --White-text-color: white;
+  --Black-text-color: #050505;
   --background-color: #f8f9fa;
   --gray: #222;
   --wrapper-color: #e9ecef;
@@ -16,7 +17,7 @@ html {
   --stickyNav-color: #222222;
 }
 
-.nav-link {
+.nav-text-colorlink {
   margin: 0px 8px 0px 8px;
 }
 
@@ -140,24 +141,9 @@ html {
 .scrollDown-hover:hover {
   transition: 0.5s;
   text-decoration: none;
-  background-color: #050505;
+  background-color: var(--Black-text-color);
   transform: scale(2);
 }
-
-/* .scrollDown-2 {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  height: 90px;
-  border-radius: 0% 0% 500px 500px;
-  background-color: #222222;
-} */
-
-/* .scrollDown-2 h5 {
-  margin-top: 30px;
-  text-align: center;
-  color: #ffffff;
-} */
 
 /*  carousel */
 
@@ -255,13 +241,13 @@ main {
 .intro-text span {
   font-weight: bolder;
   font-size: 65px;
-  color: #222;
+  color: var(--Black-text-color);
 }
 
 .intro-text p {
   margin-top: 35px;
   font-size: 20px;
-  color: #222;
+  color: var(--Black-text-color);
   font-weight: 600;
 }
 
@@ -380,7 +366,7 @@ main {
   width: 900px;
   height: 200px;
   text-align: center;
-  color: var(--text-color);
+  color: var(--White-text-color);
   background-color: #222;
 }
 .banner-2 {
@@ -399,7 +385,7 @@ main {
   width: 900px;
   height: 200px;
   text-align: center;
-  color: var(--text-color);
+  color: var(--White-text-color);
   background-color: #222;
 }
 
@@ -408,13 +394,13 @@ main {
 .container-cart * {
   margin: 0;
   padding: 0;
-  color: #050505;
+  color: var(--Black-text-color);
   font-family: jf-font;
 }
 
 .container-cart {
   background-color: #5f7c3e;
-  height: 930px;
+  height: 930;
   /* VH */
   display: flex;
   justify-content: center;
@@ -427,25 +413,19 @@ main {
   height: 800px;
 }
 
-.title h4 {
-  color: white;
+.card-cart-title h4 {
+  color: var(--White-text-color);
   font-weight: 600;
   font-size: 30px;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 30px 60px;
 }
 
-.title p {
-  color: white;
+.card-cart-title p {
+  color: var(--White-text-color);
   font-weight: 500;
   font-size: 18px;
+  margin: 0px 0px 0px 60px;
 }
-
-/* .decoration-line {
-  width: 1230px;
-  height: 2px;
-  background-color: #9e9e9e;
-  margin: auto;
-} */
 
 .item-section {
   display: flex;
@@ -460,62 +440,56 @@ main {
 }
 
 .description {
-  width: 360px;
+  width: 340px;
   height: 500px;
   margin-top: 40px;
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #fefae0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
 }
-/* pro */
+/* promo */
+
+.promo {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
 
 .promo h2 {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  color: var(--Black-text-color);
   font-weight: 600;
+  font-size: 25px;
 }
 
 .promo p {
+  color: var(--Black-text-color);
   font-size: 16px;
   letter-spacing: normal;
   line-height: 150%;
   font-weight: 500;
 }
 
-.check-icon {
-  width: 8%;
-  height: 8%;
-}
-
-.item-list {
-  width: 270px;
-  margin-left: 90px;
-  margin-top: 50px;
+.cart-btn {
+  width: 100px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
-.list {
-  display: inline-flex;
-  gap: 1em;
+.promo-button p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-.list p,
-svg {
-  letter-spacing: 1px;
-  font-weight: 500;
+.cart-img {
+  margin-top: 15px;
 }
 
-.button-1 {
-  position: relative;
-  bottom: 0px;
-  top: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+.cart-img img {
+  width: 140px;
+  transform: rotate(-45deg);
 }
 
 .button {
@@ -532,23 +506,13 @@ svg {
   border-radius: 5px;
   background-color: #404e4f;
   font-family: 600;
-  color: white;
-  text-decoration: none;
-}
-
-.button-1 a {
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #404e4f;
-  font-family: jf-font;
-  font-family: 600;
-  color: white;
+  color: var(--White-text-color);
   text-decoration: none;
 }
 
 .button a:hover,
 .button-1 a:hover {
-  color: white;
+  color: var(--White-text-color);
   background-color: #404e4f;
   text-decoration: none;
 }
