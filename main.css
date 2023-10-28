@@ -87,7 +87,7 @@ html {
 .slide-gradient {
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
+  /* !Needed memorize */
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
@@ -165,7 +165,6 @@ html {
   background-color: var(--stickyNav-color);
   border-radius: 200px;
   margin: 12px 530px 0px 530px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 header {
@@ -191,8 +190,9 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 900px;
-  background-color: var(--background-color);
+  height: 960px;
+  background-image: url(./images-active/content-section-bgv2.jpg);
+  background-size: cover;
 }
 
 .content-wrapper {
@@ -202,14 +202,46 @@ main {
   align-items: center;
   width: 90%;
   height: 800px;
-  background-color: var(--wrapper-color);
+  background-color: transparent;
+}
+
+.content-img {
+  width: 700px;
+  height: fit-content;
+  margin: 0px 30px 0px 30px;
+}
+
+.intro-slide-1 {
+  background-image: url(./images-active/content-img.JPG);
+  background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 10px;
+}
+.intro-slide-2 {
+  background-image: url(./images-active/content-img2.JPG);
+  background-repeat: no-repeat;
+  height: 600px;
+  border-radius: 10px;
 }
 
 .content {
   width: 700px;
-  height: 500px;
+  height: 640px;
   margin: 0px 30px 0px 30px;
-  background-color: var(--content-color);
+  border-radius: 10px;
+}
+
+.intro-text span {
+  font-weight: bolder;
+  font-size: 65px;
+  color: #222;
+}
+
+.intro-text p {
+  margin-top: 35px;
+  font-size: 20px;
+  color: #222;
+  font-weight: 600;
 }
 
 /* grid ↓ */
@@ -217,7 +249,7 @@ main {
 .bento-holder {
   width: 100%;
   height: 1000px;
-  background-color: var(--background-color);
+  background-image: url(./images-active/bento-bgv2.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,6 +265,22 @@ main {
   width: fit-content;
   height: fit-content;
   background-color: transparent;
+}
+
+.item-1 {
+  background-image: url(./images-active/item-1.JPG);
+}
+.item-2 {
+  background-image: url(./images-active/item-2.JPG);
+}
+.item-3 {
+  background-image: url(./images-active/item-3.JPG);
+}
+.item-4 {
+  background-image: url(./images-active/item-4.JPG);
+}
+.item-5 {
+  background-image: url(./images-active/item-5.JPG);
 }
 
 .item-1,
@@ -466,7 +514,32 @@ svg {
 
 /* ! cart section ↑  */
 
+footer {
+  background-image: url(./images-active/foot-bg.jpg);
+}
+
 .title img {
   width: 75px;
   height: 75px;
+}
+
+.title span {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.titlep {
+  font-size: 20px;
+}
+
+.titlespan {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.footer-link {
+  font-weight: bold;
+}
+
+.form-group label {
+  font-weight: bold;
 }

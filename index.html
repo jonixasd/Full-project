@@ -119,18 +119,32 @@
     <main>
       <div class="content-section-holder" id="introduction">
         <div class="content-wrapper">
-          <div class="content">
-            <div class="content-img"><img src="" alt="" /></div>
+          <div class="content-img">
+            <div
+              class="carousel slide carousel-fade"
+              data-ride="carousel"
+              id="carouselSlidesOnly"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselSlidesOnly"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselSlidesOnly" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active intro-slide-1"></div>
+                <div class="carousel-item intro-slide-2"></div>
+              </div>
+            </div>
           </div>
           <div class="content">
             <div class="intro-text">
-              <h3>Heading</h3>
+              <span>秋日將至，微風徐徐</span>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here,
+                在這個特別的市集中，您將沉浸在秋天的氛圍中，感受微風拂過皮膚的清涼。<br />
+                這個市集充滿著秋季美食、手工藝品和音樂表演，是一個家庭友好的活動，帶來歡樂和共融，等待您的蒞臨，享受秋天的樂趣。
               </p>
             </div>
           </div>
@@ -262,38 +276,37 @@
           <div class="col-lg-6 col-md-12 mb-4">
             <h3 class="text-dark title">
               <img src="./images-active/Logo.png" alt="" />
-              Title
+              <span>寶島慢播市集</span>
             </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              atque ea quis molestias. Fugiat pariatur maxime quis culpa
-              corporis vitae repudiandae aliquam voluptatem veniam, est atque
-              cumque eum delectus sint!
+            <p class="titlep">
+              <span class="titlespan">感謝您參加市集!</span><br />
+              歡迎訂閱我們的電子郵件，<br />
+              以便您收到市集最新的資訊及各種活動優惠!
             </p>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="mb-3 text-dark">links</h5>
+            <h5 class="mb-3 text-dark footer-link">連結</h5>
             <ul class="list-unstyled mb-0">
               <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f">Home</a>
+                <a href="#!" style="color: #4f4f4f">首 頁</a>
               </li>
               <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f">Intro</a>
+                <a href="#!" style="color: #4f4f4f">市集介紹</a>
               </li>
               <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f">Photos</a>
+                <a href="#!" style="color: #4f4f4f">照片集錦</a>
               </li>
               <li class="mb-1">
-                <a href="#!" style="color: #4f4f4f">Information</a>
+                <a href="#!" style="color: #4f4f4f">活動資訊</a>
               </li>
               <li>
-                <a href="#!" style="color: #4f4f4f">Contact</a>
+                <a href="#!" style="color: #4f4f4f">聯絡我們</a>
               </li>
             </ul>
           </div>
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1">電子郵件</label>
               <input
                 type="email"
                 class="form-control"
@@ -302,14 +315,16 @@
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Name</label>
+              <label for="exampleInputPassword1">姓名</label>
               <input
                 type="text"
                 class="form-control"
                 id="exampleInputPassword1"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button href="#!" type="submit" class="btn btn-primary">
+              送出
+            </button>
           </form>
         </div>
       </div>
