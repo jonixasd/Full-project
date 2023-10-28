@@ -206,9 +206,30 @@ main {
 }
 
 .content-img {
-  width: 700px;
-  height: fit-content;
   margin: 0px 30px 0px 30px;
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px 110px 110px 110px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  gap: 10px;
+}
+
+.content-img-1 {
+  grid-row: 1/4;
+  grid-column: 1/4;
+  background-image: url(./Gallery/market_pic08.JPG);
+  border-radius: 10px;
+}
+.content-img-2 {
+  grid-row: 1/4;
+  grid-column: 4/8;
+  background-image: url(./Gallery/market_pic07.JPG);
+  border-radius: 10px;
+}
+.content-img-3 {
+  grid-row: 4/7;
+  grid-column: 3/6;
+  background-image: url(./Gallery/market_pic06.JPG);
+  border-radius: 10px;
 }
 
 .intro-slide-1 {
@@ -343,7 +364,7 @@ main {
   color: white;
 }
 
-.banner {
+.banner-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,9 +372,29 @@ main {
   height: 450px;
   background-image: url(./images-active/banner-image.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
-.banner-text {
+.banner-text-1 {
+  backdrop-filter: ;
+  width: 900px;
+  height: 200px;
+  text-align: center;
+  color: var(--text-color);
+  background-color: #222;
+}
+.banner-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  background-image: url(./images-active/banner-image-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-text-2 {
   backdrop-filter: ;
   width: 900px;
   height: 200px;
@@ -372,7 +413,7 @@ main {
 }
 
 .container-cart {
-  background-color: #eaebea;
+  background-color: #5f7c3e;
   height: 930px;
   /* VH */
   display: flex;
@@ -387,16 +428,16 @@ main {
 }
 
 .title h4 {
-  font-family: jf-font;
+  color: white;
   font-weight: 600;
   font-size: 30px;
   margin: 30px 0px 30px 0px;
 }
 
 .title p {
-  font-family: jf-font;
+  color: white;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* .decoration-line {
@@ -413,7 +454,7 @@ main {
 }
 
 #mid {
-  background-color: #dadcda;
+  background-color: #fefae0;
   margin-left: 80px;
   margin-right: 80px;
 }
@@ -424,7 +465,7 @@ main {
   margin-top: 40px;
   border: 1px solid transparent;
   border-radius: 5px;
-  background-color: #eaebea;
+  background-color: #fefae0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-align: center;
 }
