@@ -484,9 +484,25 @@ main {
 .cart-btn {
   width: 100px;
   margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
+}
+
+.cart-btn button {
+  background-color: transparent;
+  border: 1px solid #e4a029;
+}
+
+.cart-btn button p {
+  color: #e4a029;
+}
+
+.cart-btn button p:hover {
+  color: var(--White-text-color);
+}
+
+.cart-btn button:hover {
+  background-color: #e4a029;
+  border: 1px solid #e4a029;
+  box-shadow: #e49f2993 0px 5px 45px 0px;
 }
 
 .promo-button p {
