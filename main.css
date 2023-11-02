@@ -164,7 +164,7 @@ header {
 
 main {
   width: 100%;
-  height: 3800px;
+  height: 4200px;
   background-color: #ffffff;
 }
 
@@ -408,7 +408,7 @@ main {
 }
 
 .container-cart {
-  background-color: #5f7c3e;
+  background-color: #fefae0;
   height: 940px;
   /* VH */
   display: flex;
@@ -423,7 +423,7 @@ main {
 }
 
 .card-cart-title h4 {
-  color: var(--White-text-color);
+  color: var(--Black-text-color-text-color);
   font-weight: 600;
   font-size: 30px;
   margin: 30px 0px 30px 0px;
@@ -431,7 +431,7 @@ main {
 }
 
 .card-cart-title p {
-  color: var(--White-text-color);
+  color: var(--Black-text-color-text-color);
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 2px;
@@ -452,6 +452,7 @@ main {
   border-radius: 15px;
   background-color: #fefae0;
   text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 /* promo */
 
@@ -483,6 +484,9 @@ main {
 .cart-btn {
   width: 100px;
   margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 .promo-button p {
@@ -528,6 +532,13 @@ main {
 }
 
 /* ! cart section ↑  */
+/* schedule section ↓ */
+
+.schedule-container {
+  height: 900px;
+  width: 100%;
+  background-color: ;
+}
 
 footer {
   background-image: url(./images-active/foot-bg.jpg);
