@@ -19,6 +19,7 @@ html {
 
 .nav-link {
   margin: 0px 6px 0px 6px;
+  letter-spacing: 3px;
 }
 
 .navbar-nav {
@@ -34,11 +35,6 @@ html {
 .navbar-logo {
   width: 50px;
   height: 50px;
-}
-
-.navbar-nav a {
-  font-weight: 600;
-  transition: 0.2s;
 }
 
 .button-parent {
@@ -100,18 +96,20 @@ html {
   color: white;
   font-size: 70px;
   font-weight: 600;
+  letter-spacing: 4px;
 }
 
-.heading p span {
+.heading span {
   color: #8ac247;
+  letter-spacing: 4px;
 }
 
 .caption p {
   color: white;
   font-size: 20px;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0.8px;
+  line-height: 30px;
+  letter-spacing: 2.5px;
 }
 
 .scrollDown-container {
@@ -150,7 +148,7 @@ html {
 .sticky {
   background-color: var(--stickyNav-color);
   border-radius: 200px;
-  margin: 12px 530px 0px 530px;
+  margin: 12px 500px 0px 500px;
 }
 
 header {
