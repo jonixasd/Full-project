@@ -10,7 +10,7 @@ html {
 :root {
   --White-text-color: white;
   --Black-text-color: #050505;
-  --background-color: #f8f9fa;
+  --background-color: #fefae0;
   --gray: #222;
   --wrapper-color: #e9ecef;
   --content-color: #dee2e6;
@@ -408,22 +408,23 @@ main {
 }
 
 .container-cart {
-  background-color: #fefae0;
-  height: 940px;
+  background-color: var(--background-color);
+  height: 900px;
   /* VH */
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .card-cart {
   background-color: transparent;
   width: 1450px;
-  height: 800px;
+  height: 700px;
 }
 
 .card-cart-title h4 {
-  color: var(--Black-text-color-text-color);
+  color: var(--Black-text-color);
   font-weight: 600;
   font-size: 30px;
   margin: 30px 0px 30px 0px;
@@ -431,7 +432,7 @@ main {
 }
 
 .card-cart-title p {
-  color: var(--Black-text-color-text-color);
+  color: var(--Black-text-color);
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 2px;
@@ -450,7 +451,7 @@ main {
   margin-top: 40px;
   border: 1px solid transparent;
   border-radius: 15px;
-  background-color: #fefae0;
+  background-color: var(--background-color);
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -484,25 +485,6 @@ main {
 .cart-btn {
   width: 100px;
   margin-left: 30px;
-}
-
-.cart-btn button {
-  background-color: transparent;
-  border: 1px solid #e4a029;
-}
-
-.cart-btn button p {
-  color: #e4a029;
-}
-
-.cart-btn button p:hover {
-  color: var(--White-text-color);
-}
-
-.cart-btn button:hover {
-  background-color: #e4a029;
-  border: 1px solid #e4a029;
-  box-shadow: #e49f2993 0px 5px 45px 0px;
 }
 
 .promo-button p {
@@ -553,20 +535,32 @@ main {
 .schedule-container {
   height: 950px;
   width: 100%;
-  background-color: #222;
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.schedule-title {
+  width: fit-content;
+  height: fit-content;
+}
+
+.schedule-title h4 {
+  color: var(--White-text-color);
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 6px;
+  writing-mode: vertical-lr;
+}
+
 .schedule-wrapper {
-  height: 770px;
-  width: 1200px;
-  background-color: rgba(255, 255, 255, 0.329);
+  height: 735px;
+  width: 1110px;
   display: grid;
-  grid-template-columns: repeat(16, 75px);
-  grid-template-rows: repeat(6, 50px) 15px repeat(5, 50px);
-  gap: 10px;
+  grid-template-columns: repeat(14, 70px);
+  grid-template-rows: repeat(6, 50px) 30px repeat(7, 50px);
+  gap: 13px 10px;
 }
 .schedule-1 {
   grid-row: 1/7;
