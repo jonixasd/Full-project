@@ -117,13 +117,19 @@ html {
   left: 860px;
 }
 
+.scrollDown-container a:hover {
+  text-decoration: none;
+}
+
 .scrollDown {
   display: flex;
   justify-content: center;
   width: 200px;
   height: 90px;
-  border-radius: 500px 500px 0% 0%;
+  border-radius: 100px 100px 0% 0%;
   background-color: #ffffff93;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .scrollDown h5 {
@@ -131,14 +137,14 @@ html {
   text-align: center;
   font-size: 25px;
   font-weight: bolder;
+  letter-spacing: 2px;
   color: #222;
 }
 
-.scrollDown-hover:hover {
+.scrollDown:hover {
   transition: 0.5s;
   text-decoration: none;
-  background-color: var(--Black-text-color);
-  transform: scale(2);
+  background-color: var(--background-color);
 }
 
 /*  carousel */
@@ -359,7 +365,7 @@ main {
   line-height: 50px;
 }
 
-.banner-2 {
+/* .banner-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,7 +383,7 @@ main {
   text-align: center;
   color: var(--White-text-color);
   background-color: #222;
-}
+} */
 
 /* ! cart section ↓ */
 
@@ -385,13 +391,11 @@ main {
   margin: 0;
   padding: 0;
   color: var(--Black-text-color);
-  font-family: jf-font;
 }
 
 .container-cart {
   background-color: var(--background-color);
   height: 930px;
-  /* VH */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,7 +488,7 @@ main {
   transform: rotate(-45deg);
 }
 
-.button {
+/* .button {
   position: relative;
   bottom: 0px;
   top: 130px;
@@ -507,7 +511,7 @@ main {
   color: var(--White-text-color);
   background-color: #404e4f;
   text-decoration: none;
-}
+} */
 
 /* ! cart section ↑  */
 /* schedule section ↓ */
@@ -639,13 +643,6 @@ main {
 .card-caption {
   letter-spacing: 2px;
   font-size: 18px;
-}
-
-.traffic-card-1,
-.traffic-card-2,
-.traffic-card-3,
-.traffic-card-4,
-.traffic-card-5 {
 }
 
 .traffic-card-1 {
