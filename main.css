@@ -23,8 +23,6 @@ html {
   display: inline-block;
 }
 
-/* ! icon issue */
-
 .navbar-brand {
   font-weight: 600;
   letter-spacing: 3.5px;
@@ -60,7 +58,7 @@ html {
 }
 
 .carousel-item {
-  height: 950px;
+  height: 920px;
 }
 
 .slide-1 {
@@ -113,7 +111,7 @@ html {
 .scrollDown-container {
   z-index: 150;
   position: absolute;
-  top: 860px;
+  top: 840px;
   left: 860px;
 }
 
@@ -124,9 +122,9 @@ html {
 .scrollDown {
   display: flex;
   justify-content: center;
-  width: 200px;
-  height: 90px;
-  border-radius: 100px 100px 0% 0%;
+  width: 175px;
+  height: 80px;
+  border-radius: 200px 200px 0% 0%;
   background-color: #ffffff93;
   text-decoration: none;
   transition: 0.5s;
@@ -150,17 +148,18 @@ html {
 /*  carousel */
 
 .sticky {
-  background-color: var(--stickyNav-color);
+  background-color: var(--background-color);
   border-radius: 200px;
   margin: 12px 420px 0px 420px;
 }
 
 header {
-  background-color: #222;
+  background-color: var(--background-color);
   height: 76px;
   transition: 0.5s;
   border-radius: 200px;
   margin: 12px 300px 0px 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 /*  ↑ sticky navbar effect*/
 /*  ↓ main page */
@@ -179,7 +178,7 @@ main {
   align-items: center;
   width: 100%;
   height: 960px;
-  background-image: url(./images-active/content-section-bgv2.jpg);
+  background-image: url(./images-active/content-section-bgv2.2.jpg);
   background-size: cover;
 }
 
@@ -658,7 +657,7 @@ main {
   grid-row: 1/6;
 }
 .traffic-card-4 {
-  grid-column: 2/13;
+  grid-column: 1/12;
   grid-row: 7/13;
 }
 .traffic-card-5 {
