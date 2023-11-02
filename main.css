@@ -11,9 +11,6 @@ html {
   --White-text-color: white;
   --Black-text-color: #050505;
   --background-color: #fefae0;
-  --gray: #222;
-  --wrapper-color: #e9ecef;
-  --content-color: #dee2e6;
   --stickyNav-color: #222222;
 }
 
@@ -275,22 +272,6 @@ main {
   background-color: transparent;
 }
 
-.item-1 {
-  background-image: url(./images-active/item-1.JPG);
-}
-.item-2 {
-  background-image: url(./images-active/item-2.JPG);
-}
-.item-3 {
-  background-image: url(./images-active/item-3.JPG);
-}
-.item-4 {
-  background-image: url(./images-active/item-4.JPG);
-}
-.item-5 {
-  background-image: url(./images-active/item-5.JPG);
-}
-
 .item-1,
 .item-2,
 .item-3,
@@ -304,27 +285,27 @@ main {
   grid-column: 1 / 4;
   grid-row: 1 / 3;
   transition: 0.5;
-  background-color: red;
+  background-image: url(./images-active/item-1.JPG);
 }
 .item-2 {
   grid-column: 4 / 9;
   grid-row: 1 / 3;
-  background-color: blue;
+  background-image: url(./images-active/item-2.JPG);
 }
 .item-3 {
   grid-column: 1 /3;
   grid-row: 3 / 5;
-  background-color: purple;
+  background-image: url(./images-active/item-3.JPG);
 }
 .item-4 {
   grid-column: 3 / 6;
   grid-row: 3 / 5;
-  background-color: green;
+  background-image: url(./images-active/item-4.JPG);
 }
 .item-5 {
   grid-column: 6/9;
   grid-row: 3/5;
-  background-color: orange;
+  background-image: url(./images-active/item-5.JPG);
 }
 
 .item-1:hover .overlay,
@@ -606,25 +587,24 @@ main {
 /* footer */
 footer {
   background-image: url(./images-active/foot-bg.jpg);
+  letter-spacing: 2.5px;
 }
 .title img {
   width: 75px;
   height: 75px;
 }
 .title span {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 30px;
 }
-.titlep {
+.title-p {
   font-size: 20px;
 }
-.titlespan {
-  font-weight: bolder;
+.title-span {
+  font-weight: bold;
   font-size: 25px;
 }
-.footer-link {
-  font-weight: bold;
-}
-.form-group label {
+.footer-link,
+.footer-group label {
   font-weight: bold;
 }
