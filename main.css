@@ -180,7 +180,7 @@ main {
   background-color: #ffffff;
 }
 
-.content-section-holder {
+.intro-section-holder {
   display: flex;
   /*  ↓ div wrap */
   flex-wrap: wrap;
@@ -192,7 +192,7 @@ main {
   background-size: cover;
 }
 
-.content-wrapper {
+.intro-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +201,7 @@ main {
   background-color: transparent;
 }
 
-.content {
+.intro {
   width: fit-content;
   height: fit-content;
   display: grid;
@@ -209,40 +209,41 @@ main {
   grid-template-rows: repeat(10, 75px);
 }
 
-.content-text {
+.intro-text {
   grid-column: 11/21;
   grid-row: 3/11;
   background-color: #606c38;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.content-text h6 {
+.intro-text h6 {
   color: #e49f29a4;
   letter-spacing: 2.5px;
-  font-size: small;
+  font-size: 12px;
   text-align: left;
 }
 
-.content-text h1 {
+.intro-text h1 {
   font-weight: 600;
   letter-spacing: 3.5px;
   font-size: 60px;
   color: #fefae0;
 }
 
-.content-text h1 span {
+.intro-text h1 span {
   font-weight: 600;
   letter-spacing: 3.5px;
   font-size: 60px;
   color: #e4a029;
 }
 
-.content-text p {
+.intro-text p {
   margin-top: 10px;
   letter-spacing: 3px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: #fefae0;
 }
@@ -253,25 +254,30 @@ main {
   background-image: url(./Gallery/market_pic04.JPG);
 }
 
-.change-button-1 {
-  grid-column: 5/6;
-  grid-row: 8/9;
-  background-color: cadetblue;
-  border-radius: 15px;
+.intro-buttons {
+  width: 300px;
+  height: 90px;
 }
 
-.change-button-2 {
-  grid-column: 7/8;
-  grid-row: 8/9;
-  background-color: cadetblue;
-  border-radius: 15px;
+.intro-buttons .nextpage-button {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #fefae0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
-.change-button-3 {
-  grid-column: 9/10;
-  grid-row: 8/9;
-  background-color: cadetblue;
-  border-radius: 15px;
+.nextpage-button:hover {
+  background-color: #e4a029;
+}
+
+.nextpage-button a:hover {
+  color: white;
 }
 
 /* Bento grid */
@@ -313,23 +319,6 @@ main {
   height: 600px;
   border-radius: 10px;
 }
-
-.intro-text span {
-  font-weight: bolder;
-  font-size: 65px;
-  color: var(--Black-text-color);
-  letter-spacing: 4px;
-}
-
-.intro-text p {
-  margin-top: 35px;
-  font-size: 20px;
-  color: var(--Black-text-color);
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-/* grid ↓ */
 
 .bento-holder {
   width: 100%;
@@ -676,6 +665,7 @@ main {
 
 .traffic-text {
   margin: 40px 0px 40px 0px;
+  text-align: center;
 }
 
 .traffic-text h1,
@@ -690,6 +680,7 @@ main {
 
 .traffic-text p {
   font-size: 18px;
+  background: linear-gradient(to bottom, transparent 40%, #e4a02950 60%);
 }
 
 .card-title {
