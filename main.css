@@ -114,9 +114,9 @@ html {
 .caption p {
   color: white;
   font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 2.5px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 3px;
 }
 
 .scrollDown-container {
@@ -248,6 +248,10 @@ main {
   color: #fefae0;
 }
 
+.intro-text-wrapper {
+  margin-left: 50px;
+}
+
 .intro-image {
   grid-column: 5/12;
   grid-row: 1/7;
@@ -257,31 +261,68 @@ main {
 .intro-buttons {
   width: 300px;
   height: 90px;
+  display: flex;
+  align-items: baseline;
 }
 
-.intro-buttons .nextpage-button {
+.intro-buttons .nextPage-button {
   width: 50px;
   height: 50px;
   padding: 10px;
   border: 2px solid #fefae0;
   border-radius: 50%;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nextPage-button i {
+  color: var(--White-text-color);
+}
+
+.nextPage-button:hover {
+  background-color: #e4a029;
+}
+
+.nextPage-button a:hover {
+  color: var(--White-text-color);
+}
+
+.booking-button {
+  margin-left: 15px;
+  padding: 10px 35px 10px 35px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #e4a029;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
-.nextpage-button:hover {
-  background-color: #e4a029;
+.booking-button {
+  color: var(--White-text-color);
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
-.nextpage-button a:hover {
-  color: white;
+.booking-button:hover {
+  text-decoration: none;
+  background-color: var(--background-color);
+  border: 2px solid white;
+  color: #e4a029;
+}
+
+/* schedule section */
+
+.schedule-container {
+  width: 100%;
+  height: 950px;
 }
 
 /* Bento grid */
-.content-img {
+/* .content-img {
   margin: 0px 30px 0px 30px;
   display: grid;
   grid-template-columns: 110px 110px 110px 110px 110px 110px 110px;
@@ -399,7 +440,7 @@ main {
 
 .overlay h1 {
   color: white;
-}
+} */
 
 .banner-1 {
   display: flex;
@@ -427,26 +468,6 @@ main {
   letter-spacing: 2px;
   line-height: 50px;
 }
-
-/* .banner-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 450px;
-  background-image: url(./images-active/banner-image-2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.banner-text-2 {
-  backdrop-filter: ;
-  width: 900px;
-  height: 200px;
-  text-align: center;
-  color: var(--White-text-color);
-  background-color: #222;
-} */
 
 /* ! cart section ↓ */
 
@@ -551,106 +572,6 @@ main {
   transform: rotate(-45deg);
 }
 
-/* .button {
-  position: relative;
-  bottom: 0px;
-  top: 130px;
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-}
-
-.button a {
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #404e4f;
-  font-family: 600;
-  color: var(--White-text-color);
-  text-decoration: none;
-}
-
-.button a:hover,
-.button-1 a:hover {
-  color: var(--White-text-color);
-  background-color: #404e4f;
-  text-decoration: none;
-} */
-
-/* ! cart section ↑  */
-/* schedule section ↓ */
-/* 
-.schedule-container {
-  height: 1000px;
-  width: 100%;
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.schedule-title {
-  width: fit-content;
-  height: fit-content;
-}
-
-.schedule-title h4 {
-  color: var(--Black-text-color);
-  font-weight: 600;
-  font-size: 50px;
-  letter-spacing: 6px;
-  margin-bottom: 20px;
-}
-
-.schedule-wrapper {
-  height: 735px;
-  width: 1110px;
-  display: grid;
-  grid-template-columns: repeat(14, 70px);
-  grid-template-rows: repeat(6, 50px) 10px repeat(7, 50px);
-  gap: 10px 20px;
-}
-.schedule-1 {
-  grid-row: 1/7;
-  grid-column: 2/5;
-  background-color: #e4a029;
-}
-.schedule-2 {
-  grid-row: 1/7;
-  grid-column: 5/8;
-  background-color: #e4a029;
-}
-.schedule-3 {
-  grid-row: 1/7;
-  grid-column: 8/11;
-  background-color: #e4a029;
-}
-.schedule-4 {
-  grid-row: 1/7;
-  grid-column: 11/14;
-  background-color: #e4a029;
-}
-.schedule-5 {
-  grid-row: 8/14;
-  grid-column: 2/5;
-  background-color: #e4a029;
-}
-.schedule-6 {
-  grid-row: 8/14;
-  grid-column: 5/8;
-  background-color: #e4a029;
-}
-.schedule-7 {
-  grid-row: 8/14;
-  grid-column: 8/11;
-  background-color: #e4a029;
-}
-.schedule-8 {
-  grid-row: 8/14;
-  grid-column: 11/14;
-  background-color: #e4a029;
-} */
-
 /* traffic section */
 
 .traffic-container {
@@ -706,7 +627,7 @@ main {
 }
 
 .card-caption {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 18px;
 }
 
