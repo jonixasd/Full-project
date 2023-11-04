@@ -14,52 +14,181 @@ html {
   --stickyNav-color: #222222;
 }
 
-#navbar {
-  padding: 0;
+.sticky {
+  background-color: var(--background-color);
+  box-shadow: rgba(61, 61, 61, 0.767) 0px 7px 29px 0px;
 }
 
-.nav-link {
-  margin: 0px 6px 0px 6px;
-  letter-spacing: 3px;
+header {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  background-color: var(--background-color);
+  width: 100%;
+  height: 76px;
+  transition: 0.5s;
+  box-shadow: #fefae0a8 0px 7px 29px 0px;
+}
+/*  ↑ sticky navbar effect*/
+
+.nav-logo {
   font-weight: 600;
-  font-size: 15px;
+  letter-spacing: 3.5px;
+  font-size: 20px;
+  color: var(--Black-text-color);
 }
 
-.nav-link i {
+.nav-logo:hover {
+  color: var(--Black-text-color);
+  text-decoration: none;
+}
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-logo img:hover {
+  transform: rotate(361deg);
+  transition: 0.3s ease-in-out;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  padding: 13px;
+}
+
+#nav ul {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links {
+  color: #404040;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links:hover {
+  text-decoration: none;
+  color: #404040c0;
+  transition: 0.2s ease-in-out;
+}
+
+#nav i {
   margin-right: 5px;
 }
 
-.navbar-nav {
-  display: inline-block;
-}
-
-.navbar-brand {
+.login-btn {
+  padding: 10px 40px 10px 40px;
+  border-radius: 8px;
+  background-color: #28a745;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  color: var(--White-text-color);
+  font-size: 18px;
   font-weight: 600;
-  letter-spacing: 3.5px;
-}
-
-.navbar-logo {
-  width: 50px;
-  height: 50px;
-}
-
-.button-parent {
-  width: 85px;
+  letter-spacing: 5px;
   margin-right: 20px;
 }
 
-.button-parent button {
-  font-weight: bold;
+.login-btn:hover {
+  text-decoration: none;
+  color: var(--White-text-color);
+  background-color: #208638;
+  transform: translate(0, -3px);
+  transition: 0.3s ease;
+  box-shadow: #2086388e 0px 15px 29px 0px;
+}
+
+.toggle_btn {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1240px) {
+  .nav-links,
+  .login-btn {
+    display: none;
+  }
+  #dropdown_menu {
+    display: flex;
+  }
+  .toggle_btn,
+  .login-btn-drop {
+    display: block;
+  }
+}
+/* navbar ↑ */
+
+.dropdown_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefae0;
+  height: 0px;
+}
+
+.open {
+  height: 380px;
+}
+.dropdown_menu ul {
+  text-align: center;
+}
+
+.dropdown_menu li {
+  margin-top: 15px;
+}
+
+.nav-links-drop {
+  color: #404040;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links-drop i {
+  margin: 0px 10px 0px 10px;
+}
+
+.nav-links-drop:hover {
+  text-decoration: none;
+  color: #404040c0;
+  transition: 0.2s ease-in-out_;
+}
+
+.login-btn-drop {
+  padding: 10px 40px 10px 40px;
+  border-radius: 8px;
+  background-color: #28a745;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  color: var(--White-text-color);
   font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
 }
 
-.navbar-collapse {
-  background-color: var(--background-color);
+.login-btn-drop:hover {
+  text-decoration: none;
+  color: var(--White-text-color);
+  background-color: #208638;
+  transform: translate(0, -3px);
+  transition: 0.3s ease;
+  box-shadow: #2086388e 0px 15px 29px 0px;
 }
-
-/* navbar ↑  */
-/* carousel ↓  */
-
+/* navbar dropdown ↑ */
+/* carousel ↓ */
 .item-text {
   z-index: 999;
   height: 200px;
@@ -160,22 +289,6 @@ html {
 } */
 
 /*  carousel */
-
-.sticky {
-  position: fixed;
-  top: 800px;
-  right: 700px;
-  background-color: var(--background-color);
-  box-shadow: rgba(61, 61, 61, 0.767) 0px 7px 29px 0px;
-}
-
-header {
-  background-color: var(--background-color);
-  height: 76px;
-  transition: 0.5s;
-  box-shadow: #fefae0a8 0px 7px 29px 0px;
-}
-/*  ↑ sticky navbar effect*/
 /*  ↓ main page */
 
 main {

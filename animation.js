@@ -1,29 +1,19 @@
 // navbar sticky affect
 
 window.addEventListener('scroll', function () {
-  var stickyNavbar = document.querySelector('header');
+  var stickyNavbar = document.querySelector('.site-header');
   stickyNavbar.classList.toggle('sticky', window.scrollY > 0);
 });
 
-// Owlcarousel
+// nav responsive
 
-// $(document).ready(function () {
-//   $('.owl-carousel').owlCarousel();
-// });
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.toggle_btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
 
-// $('.owl-carousel').owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   responsive: {
-//     0: {
-//       items: 1,
-//     },
-//     600: {
-//       items: 3,
-//     },
-//     1000: {
-//       items: 5,
-//     },
-//   },
-// });
+toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle('open');
+  const isOpen = dropDownMenu.classList.contains('open');
+
+  toggleBtnIcon.classList = isOpen ? 'fas fa-bars fa-2x' : 'fas fa-times fa-2x';
+};
