@@ -7,13 +7,19 @@ window.addEventListener('scroll', function () {
 
 // nav responsive
 
-const toggleBtn = document.querySelector('.toggle_btn');
-const toggleBtnIcon = document.querySelector('.toggle_btn i');
-const dropDownMenu = document.querySelector('.dropdown_menu');
-
-toggleBtn.onclick = function () {
-  dropDownMenu.classList.toggle('open');
-  const isOpen = dropDownMenu.classList.contains('open');
-
-  toggleBtnIcon.classList = isOpen ? 'fas fa-bars fa-2x' : 'fas fa-times fa-2x';
-};
+function showDropdown() {
+  const Dropdown = document.querySelector('.dropdown_menu');
+  Dropdown.style.display = 'flex';
+  const toggleBtnClose = document.querySelector('.toggle_btn,.toggle-btn i');
+  toggleBtnClose.style.display = 'none';
+  const CloseBtn = document.querySelector('.close_btn,.close_btn i');
+  CloseBtn.style.display = 'block';
+}
+function hideDropdown() {
+  const Dropdown = document.querySelector('.dropdown_menu');
+  Dropdown.style.display = 'none';
+  const toggleBtnClose = document.querySelector('.toggle_btn,.toggle-btn i');
+  toggleBtnClose.style.display = 'block';
+  const CloseBtn = document.querySelector('.close_btn,.close_btn i');
+  CloseBtn.style.display = 'none';
+}

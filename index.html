@@ -78,11 +78,22 @@
           </li>
         </ul>
         <a href="" class="login-btn">登入</a>
-        <div class="toggle_btn">
+      </nav>
+      <nav id="menu_nav">
+        <div class="menu_nav_logo">
+          <a class="nav_logo" href="#">
+            <img src="./images-active/Logo.png" class="nav-logo" />
+            <span>寶島慢播市集</span></a
+          >
+        </div>
+        <div class="toggle_btn" onclick="showDropdown()">
           <i class="fas fa-bars fa-2x" style="color: #404040"></i>
         </div>
+        <div class="close_btn" onclick="hideDropdown()">
+          <i class="fas fa-times fa-2x" style="color: #404040"></i>
+        </div>
       </nav>
-      <div class="dropdown_menu" id="dropdown_menu">
+      <div class="dropdown_menu">
         <ul>
           <li>
             <a href="#" class="nav-links-drop"
