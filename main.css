@@ -265,14 +265,14 @@ header {
 .slide-gradient {
   position: absolute;
   right: 250px;
-  top: 10px;
+  top: 15px;
   width: 100%;
   height: 100%;
   /* !Needed memorize */
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 25%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -523,7 +523,7 @@ main {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -531,9 +531,9 @@ main {
 .schedule-title {
   width: fit-content;
   height: 200px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .schedule-title h2 {
@@ -543,11 +543,11 @@ main {
 }
 
 .schedule-item-group {
-  width: 1444px;
-  height: 844px;
+  width: 1364px;
+  height: 714px;
   display: grid;
-  grid-template-columns: 700px 30px 4px 30px 700px;
-  grid-template-rows: 400px 30px 4px 30px 400px;
+  grid-template-columns: 650px 20px 4px 20px 650px;
+  grid-template-rows: 325px 20px 4px 20px 325px;
 }
 
 .schedule-item-group h3 {
@@ -558,12 +558,15 @@ main {
 }
 
 .schedule-item-group li {
-  padding: 15px;
+  padding: 10px;
   margin: 20px 0px 20px 0px;
   list-style: none;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+.schedule-item-group ul {
+  margin: 0;
 }
 
 .schedule-item-group li:hover {
@@ -593,7 +596,7 @@ main {
   justify-content: left;
   align-items: baseline;
   border-radius: 20px;
-  padding: 50px;
+  padding: 30px;
 }
 .schedule-item-1 li:hover,
 .schedule-item-2 li:hover,
