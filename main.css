@@ -226,13 +226,20 @@ header {
 /* carousel ↓ */
 .item-text {
   z-index: 999;
-  height: 200px;
+  height: 300px;
   width: fit-content;
   position: absolute;
   bottom: 380px;
   right: 835px;
   overflow-wrap: break-word;
   /* text-wrap */
+}
+
+.item-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .carousel-item {
@@ -271,6 +278,7 @@ header {
   font-size: 70px;
   font-weight: 600;
   letter-spacing: 4px;
+  margin: 0;
 }
 
 .heading span {
@@ -284,6 +292,35 @@ header {
   font-weight: 500;
   line-height: 35px;
   letter-spacing: 3px;
+  margin: 0;
+}
+
+.btns {
+  width: 172px;
+  height: 50px;
+  display: flex;
+}
+
+.hero-btn {
+  padding: 10px 40px 10px 40px;
+  border: px solid white;
+  border-radius: 8px;
+  background-color: #8ac247;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  color: var(--White-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.hero-btn:hover {
+  text-decoration: none;
+  color: var(--White-text-color);
+  background-color: #208638;
+  transform: translate(0, -3px);
+  transition: 0.3s ease;
+  box-shadow: #2086388e 0px 15px 29px 0px;
 }
 
 /* .scrollDown-container {
@@ -411,9 +448,10 @@ main {
 }
 
 .intro-buttons {
-  width: 300px;
-  height: 90px;
+  width: 220px;
+  height: 50px;
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -443,16 +481,12 @@ main {
 }
 
 .booking-button {
-  margin-left: 15px;
   padding: 10px 35px 10px 35px;
   border: 2px solid white;
   border-radius: 10px;
   background-color: #e4a029;
   text-decoration: none;
   transition: 0.2s ease-in-out;
-}
-
-.booking-button {
   color: var(--White-text-color);
   font-size: 1.1em;
   font-weight: 600;
@@ -852,7 +886,7 @@ main {
 }
 
 .cart-btn {
-  width: 150px;
+  width: 100px;
   margin-left: 30px;
 }
 

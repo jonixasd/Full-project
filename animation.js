@@ -23,3 +23,9 @@ function hideDropdown() {
   const CloseBtn = document.querySelector('.close_btn,.close_btn i');
   CloseBtn.style.display = 'none';
 }
+
+// cart alert
+
+function cartAlert() {
+  alert('已收到你的報名資訊，感謝你~');
+}
