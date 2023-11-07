@@ -376,12 +376,11 @@ main {
 
 .intro-section-holder {
   display: flex;
-  /*  ↓ div wrap */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   background-image: url(./images-active/content-section-bgv2.2.jpg);
   background-size: cover;
 }
@@ -403,9 +402,9 @@ main {
 }
 
 .intro-text {
-  grid-column: 2/4;
-  grid-row: 2/4;
-  background-color: #606c38;
+  width: 700px;
+  height: 500px;
+  /* background-color: #606c38; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,21 +441,8 @@ main {
 }
 
 .intro-image {
-  width: 100px;
-  height: 100px;
-}
-
-.owl-theme .item {
-  height: 10rem;
-  background: #4dc7a0;
-  padding: 1rem;
-}
-
-.owl-carousel .item h4 {
-  color: #fff;
-  font-weight: 400;
-  font-size: 1.4375rem;
-  margin-top: 0rem;
+  width: 500px;
+  height: 600px;
 }
 
 .intro-buttons {
@@ -1122,4 +1108,17 @@ footer {
   height: 4px;
   border-radius: 100px;
   background-color: rgba(161, 161, 161, 0.459);
+}
+
+.owl-theme .item {
+  height: 10rem;
+  background: #4dc7a0;
+  padding: 1rem;
+}
+
+.owl-carousel .item h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4375rem;
+  margin-top: 0rem;
 }
