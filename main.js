@@ -44,7 +44,16 @@ $('.owl-carousel').owlCarousel({
       items: 3,
     },
     1000: {
-      items: 1,
+      items: 5,
     },
   },
+});
+
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+    items: 3, // Change the number of items to display
+    loop: true, // Set to true if you want the carousel to loop
+    margin: 10, // Adjust the margin between items
+    // Add other options as needed
+  });
 });
