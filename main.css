@@ -12,7 +12,7 @@ html {
 :root {
   --White-text-color: white;
   --Black-text-color: #050505;
-  --background-color: #fefae0;
+  --background-color: hsl(52, 94%, 94%);
   --stickyNav-color: #222222;
 }
 
@@ -30,6 +30,7 @@ header {
   height: 76px;
   transition: 0.5s;
   box-shadow: #fefae0a8 0px 7px 29px 0px;
+  padding: 0px 170px 0px 170px;
 }
 /*  ↑ sticky navbar effect*/
 
@@ -381,7 +382,7 @@ main {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: url(./images-active/content-section-bgv2.2.jpg);
+  background-image: url(./images-active/content-section-bgv2.3.jpg);
   background-size: cover;
 }
 
@@ -531,7 +532,7 @@ main {
 
 .schedule-item-group-1 {
   width: 100%;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -540,7 +541,7 @@ main {
 }
 .schedule-item-group-2 {
   width: 100%;
-  height: fit-content;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -609,8 +610,8 @@ main {
 }
 
 .schedule-item-1 {
-  width: 650px;
-  height: 330px;
+  width: 735px;
+  height: fit-content;
   background-image: url(./images-active/schedule-bg.jpg);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -620,8 +621,8 @@ main {
 }
 
 .schedule-item-2 {
-  width: 650px;
-  height: 330px;
+  width: 735px;
+  height: fit-content;
   background-image: url(./images-active/schedule-bg.jpg);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -629,24 +630,10 @@ main {
 .schedule-item-2 li {
   background-color: #e49f29e1;
 }
-/* 
-.D-line-1 {
-  grid-column: 3/4;
-  grid-row: 1/6;
-  background-color: rgba(161, 161, 161);
-  border-radius: 10px;
-}
-
-.D-line-2 {
-  grid-column: 1/6;
-  grid-row: 3/4;
-  background-color: rgba(161, 161, 161);
-  border-radius: 10px;
-} */
 
 .schedule-item-3 {
-  width: 650px;
-  height: 350px;
+  width: 735px;
+  height: fit-content;
   background-image: url(./images-active/schedule-bg.jpg);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -656,8 +643,8 @@ main {
 }
 
 .schedule-item-4 {
-  width: 650px;
-  height: 350px;
+  width: 735px;
+  height: fit-content;
   background-image: url(./images-active/schedule-bg.jpg);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -838,7 +825,7 @@ main {
 
 .card-cart {
   background-color: transparent;
-  width: 1450px;
+  width: 80%;
   height: 80%;
 }
 
@@ -862,12 +849,13 @@ main {
 }
 
 .item-section {
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 @media only screen and (max-width: 1240px) {
@@ -944,12 +932,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-@media only screen and (max-width: 1240px) {
-  .traffic-container {
-    height: ;
-  }
-}
 .traffic-text {
   margin: 40px 0px 40px 0px;
   text-align: center;
@@ -1002,24 +984,23 @@ main {
   width: fit-content;
   height: fit-content;
   display: flex;
-  gap: 50px;
+  gap: 80px;
   flex-wrap: wrap;
   justify-content: start;
 }
 
-/* traffic RWD */
-/* @media only screen and (max-width: 1240px) {
-  .traffic-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 275px) repeat(2, 325px);
-    grid-template-areas:
-      'first'
-      'first'
-      'first'
-      'back'
-      'back';
-  }
-} */
+.traffic-card-1,
+.traffic-card-2,
+.traffic-card-3 {
+  width: 450px;
+}
+
+.traffic-card-1,
+.traffic-card-2,
+.traffic-card-3,
+.traffic-card-4,
+.traffic-card-5 {
+}
 
 .card-caption ul li {
   list-style: none;
@@ -1035,32 +1016,6 @@ main {
 .card-caption {
   letter-spacing: 3px;
   font-size: 16px;
-}
-
-.traffic-card-1 {
-  /* grid-column: 1/9;
-  grid-row: 1/6; */
-  /* background-color: #222; */
-}
-.traffic-card-2 {
-  /* grid-column: 11/18;
-  grid-row: 1/6; */
-  /* background-color: #222; */
-}
-.traffic-card-3 {
-  /* grid-column: 19/28;
-  grid-row: 1/6; */
-  /* background-color: #222; */
-}
-.traffic-card-4 {
-  /* grid-column: 1/12;
-  grid-row: 7/13; */
-  /* background-color: #222; */
-}
-.traffic-card-5 {
-  /* grid-column: 16/28;
-  grid-row: 7/13; */
-  /* background-color: #222; */
 }
 
 /* footer */
@@ -1094,17 +1049,30 @@ footer {
 
 /* decoration */
 
-.line {
+.line-2 {
   width: 100%;
-  height: 3px;
-  /* padding: 100px 0px 100px 5px; */
+  height: 4px;
+  padding-top: 100px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+.line-3 {
+  width: 100%;
+  height: 4px;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
 }
 
 .D-line-3 {
-  width: 77%;
+  width: 80%;
+  height: 4px;
+  border-radius: 100px;
+  background-color: rgba(161, 161, 161, 0.459);
+}
+.D-line-2 {
+  width: 80%;
   height: 4px;
   border-radius: 100px;
   background-color: rgba(161, 161, 161, 0.459);
