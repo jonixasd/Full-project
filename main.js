@@ -35,15 +35,16 @@ function cartAlert() {
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
     },
     600: {
-      items: 1,
+      items: 3,
     },
-    1000: {
+    1800: {
       items: 1,
     },
   },
@@ -51,7 +52,7 @@ $('.owl-carousel').owlCarousel({
 
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
-    items: 3, // Change the number of items to display
+    items: 1, // Change the number of items to display
     loop: true, // Set to true if you want the carousel to loop
     margin: 10, // Adjust the margin between items
     // Add other options as needed
