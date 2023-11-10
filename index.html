@@ -71,9 +71,70 @@
             >
           </li>
         </ul>
-        <a href="#" class="login-btn">登入</a>
+        <a
+          href="#"
+          class="login-btn"
+          data-toggle="modal"
+          data-target="#loginModal"
+          >登入</a
+        >
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="login-modal-content">
+              <div class="modal-header border-bottom-0">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-title text-center" id="login-form-title">
+                  <h4>會員登入</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email1"
+                        placeholder="帳號"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password1"
+                        placeholder="密碼"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-success btn-block btn-round"
+                      id="login-modal-btn"
+                      onclick="loginAlert()"
+                    >
+                      登入
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
-
       <nav id="menu_nav">
         <div class="menu_nav_logo">
           <a class="nav_logo" href="#">
@@ -122,7 +183,6 @@
             >
           </li>
         </ul>
-        <a href="" class="login-btn-drop">登入</a>
       </div>
     </header>
     <div
@@ -286,13 +346,19 @@
               <h3>過去青春・歷史之旅</h3>
               <ul>
                 <a href="#Information"
-                  ><li><p>第一個舞台表演： 週五晚上7:00 - 9:00</p></li></a
+                  ><li>
+                    <p>第一個舞台表演： 12月/6號 週五晚上7:00 - 9:00</p>
+                  </li></a
                 >
                 <a href="#Information"
-                  ><li><p>第一個舞台表演： 週五晚上7:00 - 9:00</p></li></a
+                  ><li>
+                    <p>第一個舞台表演： 12月/6 號週五晚上7:00 - 9:00</p>
+                  </li></a
                 >
                 <a href="#Information"
-                  ><li><p>第三個舞台表演： 週日下午2:00 - 下午 4:00</p></li></a
+                  ><li>
+                    <p>第三個舞台表演： 12月/8號 週日下午2:00 - 下午 4:00</p>
+                  </li></a
                 >
               </ul>
             </div>
@@ -300,10 +366,14 @@
               <h3>水泥叢林・城市大自然</h3>
               <ul>
                 <a href="#Information"
-                  ><li><p>第一個舞台表演： 週六上午11:00 - 下午 1:00</p></li></a
+                  ><li>
+                    <p>第一個舞台表演： 12月/20號 週六上午11:00 - 下午 1:00</p>
+                  </li></a
                 >
                 <a href="#Information"
-                  ><li><p>第二個舞台表演： 週日下午3:00 - 下午 5:00</p></li></a
+                  ><li>
+                    <p>第二個舞台表演： 12月/21號 週日下午3:00 - 下午 5:00</p>
+                  </li></a
                 >
                 <a href="#Information"
                   ><li><p>敬請期待</p></li></a
@@ -316,13 +386,19 @@
               <h3>藝染之街・街頭藝術之旅</h3>
               <ul>
                 <a href="#Information">
-                  <li><p>第一個舞台表演：週五 晚上8:00 - 10:00</p></li></a
+                  <li>
+                    <p>第一個舞台表演： 12月/1號 週五 晚上8:00 - 10:00</p>
+                  </li></a
                 >
                 <a href="#Information">
-                  <li><p>第二個舞台表演：週六 下午1:00 - 下午3:00</p></li></a
+                  <li>
+                    <p>第二個舞台表演： 12月/2號 週六 下午1:00 - 下午3:00</p>
+                  </li></a
                 >
                 <a href="#Information">
-                  <li><p>第三個舞台表演：週日 上午11:00 - 上午1:00</p></li></a
+                  <li>
+                    <p>第三個舞台表演： 12月/3號 週日 上午11:00 - 上午1:00</p>
+                  </li></a
                 >
               </ul>
             </div>
@@ -330,16 +406,20 @@
               <h3>跨界新境・多元文化探索</h3>
               <ul>
                 <a href="#Information"
-                  ><li><p>第一個舞台表演： 週五晚上7:30 - 9:30</p></li></a
-                >
-                <a href="#Information"
                   ><li>
-                    <p>第二個舞台表演： 週六下午3:30 - 下午 5:30</p>
+                    <p>第一個舞台表演： 12月/9號 週五晚上7:30 - 9:30</p>
                   </li></a
                 >
                 <a href="#Information"
                   ><li>
-                    <p>特別結尾表演： 週日下午4:00 - 下午 6:00<br /></p></li
+                    <p>第二個舞台表演： 12月/10號 週六下午3:30 - 下午 5:30</p>
+                  </li></a
+                >
+                <a href="#Information"
+                  ><li>
+                    <p>
+                      特別結尾表演： 12月/11號 週日下午4:00 - 下午 6:00<br />
+                    </p></li
                 ></a>
               </ul>
             </div>
@@ -415,7 +495,6 @@
                   <button
                     type="button"
                     class="btn btn-success btn-block promo-button"
-                    onclick="cartAlert()"
                   >
                     <p>報名</p>
                   </button>
