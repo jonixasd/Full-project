@@ -26,9 +26,7 @@ header {
   width: 100%;
   height: 76px;
   transition: 0.5s;
-  /* box-shadow: #fefae0a8 0px 7px 29px 0px; */
   box-shadow: #2222227e 0px 15px 29px 0px;
-  padding: 0px 170px 0px 170px;
 }
 
 .sticky {
@@ -42,7 +40,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  padding: 13px;
+  padding: 13px 170px 13px 170px;
 }
 
 #nav ul {
@@ -159,9 +157,6 @@ header {
   .login-btn-drop,
   #menu_nav {
     display: flex;
-  }
-  header {
-    padding: 0;
   }
 }
 
@@ -325,7 +320,7 @@ sec .carousel-lists .active {
 }
 
 .heading p,
-.heading-first,
+.heading-first p,
 .heading-sec p {
   color: var(--clr-black-text);
   font-size: 6rem;
@@ -363,6 +358,31 @@ sec .carousel-lists .active {
   letter-spacing: 3px;
   text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.95);
   margin: 0;
+}
+
+/* hero text RWD */
+
+@media screen and (max-width: 1000px) {
+  .heading-sec p,
+  .heading-sec span {
+    font-size: 3rem;
+  }
+
+  .heading p,
+  .heading-first p,
+  .heading span,
+  .heading-first span {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .caption {
+    padding: 0px 40px 0px 40px;
+  }
+
+  .caption p {
+    font-size: 14px;
+  }
 }
 
 .btns {
@@ -963,7 +983,14 @@ main {
 .traffic-card-2,
 .traffic-card-3 {
   width: 450px;
-  min-width: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+  .traffic-card-1,
+  .traffic-card-2,
+  .traffic-card-3 {
+    width: 350px;
+  }
 }
 
 .card-caption {

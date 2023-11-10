@@ -62,6 +62,61 @@ $(document).ready(function () {
   });
 });
 
+// robot
+
+var r = true;
+$('#seb').delay(1000).fadeOut('slow');
+$('#se').click(function () {
+  ch();
+});
+
+function ch() {
+  $('#seb').toggle(function () {
+    if (r) {
+      $('#se img').attr('src', 'image/se2.png');
+      r = !r;
+    } else {
+      $('#se img').attr('src', 'image/se1.png');
+      r = !r;
+    }
+  });
+}
+
+function keyin() {
+  var keyCode = event.which;
+  if (keyCode == 13) {
+    $('#sef').append(
+      '<div class="m2">' + document.getElementById('cuw').value + '</div><br>'
+    );
+    $('#cuw').val('');
+    appw();
+    event.preventDefault();
+  }
+}
+
+function appw() {
+  setTimeout(function () {
+    $('#sef').append(app());
+    var e = document.getElementById('cuw');
+    e.scrollTop = e.scrollHeight;
+    e.scrollLeft = e.scrollLeft;
+  }, 500);
+}
+
+function app() {
+  var c = Math.floor(Math.random() * 3);
+  if (c % 3 == 0) {
+    return '<div class="m1">歡迎光臨本站，有任何問題都歡迎問我，若無法百分百滿足您的問題，還請致電或電郵告知。</div><br>';
+  }
+  if (c % 3 == 1) {
+    return '<div class="m1">謝謝您的指教，我們會盡快請專人回復您</div><br>';
+  }
+
+  if (c % 3 == 2) {
+    return '<div class="m1">忙線中，請稍後再試。</div><br>';
+  }
+}
+
 // Smooth scroll
 
 // const body = document.body,
