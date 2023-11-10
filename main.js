@@ -27,7 +27,10 @@ function hideDropdown() {
 // cart alert
 
 function loginAlert() {
-  alert('您已登入會員。');
+  alert('您已登入會員!');
+}
+function Activity() {
+  alert('您已成功報名此活動! 請注意活動參加時間，詳情請看活動檔期。');
 }
 
 //Owl carousel

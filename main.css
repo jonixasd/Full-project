@@ -1099,3 +1099,26 @@ footer {
   font-weight: bold;
   letter-spacing: 4px;
 }
+
+/* activity */
+
+#activity-content {
+  background-color: var(--clr-main-bg);
+}
+
+#activity-title {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+#activity-body {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+#activity-btn {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
