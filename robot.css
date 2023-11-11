@@ -1,56 +1,72 @@
-#se {
+#chat-icon {
   position: fixed;
   z-index: 999;
   right: 10px;
   bottom: 20px;
-}
-
-.pointer {
+  background-color: #fefae0;
+  padding: 10px 10px 10px 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: #222222af 0px 20px 50px 0px;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
-#seb {
+#chat-icon:hover {
+  transform: translate(0, -3px);
+  transition: 0.2s ease-in-out;
+  box-shadow: #222 0px 15px 29px 0px;
+}
+
+#chat-container {
   display: block;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   right: 10px;
   bottom: 110px;
   height: 400px;
   width: 300px;
   padding: 20px;
-  border: solid 1px #a84c39;
-  background: #f6f3f1;
+  border-radius: 20px;
+  background: #fefae0;
+  box-shadow: #222222af 0px 20px 50px 0px;
 }
 
-#sef {
+#chat-text {
   display: block;
   overflow-y: scroll;
   height: 80%;
 }
 
-#cuw {
+#textarea {
   display: block;
 
   position: absolute;
-  width: 96%;
-  right: 5px;
-  padding: 5px;
-  bottom: 5px;
+  width: 90%;
+  height: 45px;
+  right: 15px;
+  padding: 8px 5px 5px 20px;
+  bottom: 15px;
 
-  border-radius: 20px;
-  background: #ddd9d3;
+  border-radius: 50px;
+  border: transparent solid 1px;
+  background: rgba(179, 176, 159, 0.69);
 }
 
-.m1 {
+#textarea:focus {
+  outline: none;
+}
+
+.ans1 {
   position: relative;
   color: white;
-  background: #a84c39;
+  background: #a76c1b;
   width: 190px;
   padding: 10px;
   border-radius: 10px;
   word-break: break-all;
 }
-.m1:after {
+.ans1:after {
   position: absolute;
   content: '';
   width: 0;
@@ -58,20 +74,20 @@
   left: 10px;
   bottom: -20px;
   border: solid 10px transparent;
-  border-top-color: #a84c39;
+  border-top-color: #a76c1b;
 }
 
-.m2 {
+.ans2 {
   position: relative;
   color: white;
-  background: #738531;
+  background: #d19328;
   width: 190px;
   padding: 10px;
   border-radius: 10px;
   left: 25px;
   word-break: break-all;
 }
-.m2:after {
+.ans2:after {
   position: absolute;
   content: '';
   width: 0;
@@ -79,14 +95,14 @@
   right: 10px;
   bottom: -20px;
   border: solid 10px transparent;
-  border-top-color: #738531;
+  border-top-color: #d19328;
 }
 
 /* robot RWD */
 
 @media only screen and (max-width: 1200px) {
-  #se,
-  #seb {
+  #chat-icon,
+  #chat-text {
     display: none;
   }
 }

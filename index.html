@@ -439,9 +439,7 @@
           <div class="item-section">
             <div class="description">
               <div class="cart-text">
-                <div class="cart-img">
-                  <img src="./images-active/autumnleaves-1.png" alt="" />
-                </div>
+                <div class="cart-img"></div>
                 <div class="promo">
                   <h2>歷史之旅: 歷史故事講解</h2>
                   <p>
@@ -463,9 +461,7 @@
             </div>
             <div class="description">
               <div class="cart-text">
-                <div class="cart-img">
-                  <img src="./images-active/autumnleaves.png" alt="" />
-                </div>
+                <div class="cart-img"></div>
                 <div class="promo">
                   <h2>大自然音樂會:音樂饗宴</h2>
                   <p>
@@ -487,9 +483,7 @@
             </div>
             <div class="description">
               <div class="cart-text">
-                <div class="cart-img">
-                  <img src="./images-active/autumnleaves-2.png" alt="" />
-                </div>
+                <div class="cart-img"></div>
                 <div class="promo">
                   <h2>街頭藝術表演:藝術盛會</h2>
                   <p>
@@ -510,9 +504,7 @@
             </div>
             <div class="description">
               <div class="cart-text">
-                <div class="cart-img">
-                  <img src="./images-active/autumnleaves-2.png" alt="" />
-                </div>
+                <div class="cart-img"></div>
                 <div class="promo">
                   <h2>多元文化探索:跨界新境</h2>
                   <p>
@@ -726,27 +718,24 @@
     <!-----======service客服============------>
 
     <!--1.圖示(甚麼都不做也看的到)---->
-    <div id="se" class="pointer">
+    <div id="chat-icon">
       <i class="fas fa-headset fa-3x" style="color: #404040"></i>
     </div>
 
     <!--2.聊天紀錄(點擊才看的到)---->
-    <div id="seb">
+    <div id="chat-container">
       <!--初始對話---->
-      <div id="sef">
-        <div class="m1">歡迎光臨陽光海帆，有任何問題都可以問我喔。</div>
+      <div id="chat-text">
+        <div class="ans1">歡迎光臨，有任何問題都可以問我喔。</div>
         <br />
       </div>
-
-      <div>
-        <textarea
-          row="2"
-          placeholder="請輸入文字"
-          name="cuw"
-          id="cuw"
-          onKeyDown="keyin(event)"
-        ></textarea>
-      </div>
+      <textarea
+        row="2"
+        placeholder="你的訊息..."
+        name="textarea"
+        id="textarea"
+        onKeyDown="keyin(event)"
+      ></textarea>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>

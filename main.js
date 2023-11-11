@@ -65,30 +65,24 @@ $(document).ready(function () {
 // robot
 
 var r = true;
-$('#seb').delay(1000).fadeOut('slow');
-$('#se').click(function () {
+$('#chat-container').delay(1000).fadeOut('slow');
+$('#chat-icon').click(function () {
   ch();
 });
 
 function ch() {
-  $('#seb').toggle(function () {
-    if (r) {
-      $('#se img').attr('src', 'image/se2.png');
-      r = !r;
-    } else {
-      $('#se img').attr('src', 'image/se1.png');
-      r = !r;
-    }
-  });
+  $('#chat-container').toggle(function () {});
 }
 
 function keyin() {
   var keyCode = event.which;
   if (keyCode == 13) {
-    $('#sef').append(
-      '<div class="m2">' + document.getElementById('cuw').value + '</div><br>'
+    $('#chat-text').append(
+      '<div class="ans2">' +
+        document.getElementById('textarea').value +
+        '</div><br>'
     );
-    $('#cuw').val('');
+    $('#textarea').val('');
     appw();
     event.preventDefault();
   }
@@ -96,24 +90,25 @@ function keyin() {
 
 function appw() {
   setTimeout(function () {
-    $('#sef').append(app());
-    var e = document.getElementById('cuw');
+    $('#chat-text').append(app());
+    var e = document.getElementById('textarea');
     e.scrollTop = e.scrollHeight;
     e.scrollLeft = e.scrollLeft;
   }, 500);
+  textarea;
 }
 
 function app() {
   var c = Math.floor(Math.random() * 3);
   if (c % 3 == 0) {
-    return '<div class="m1">歡迎光臨本站，有任何問題都歡迎問我，若無法百分百滿足您的問題，還請致電或電郵告知。</div><br>';
+    return '<div class="ans1">歡迎來到客服專區，有任何問題都歡迎詢問，若無法百分百滿足您的問題，還請致電或電郵告知。</div><br>';
   }
   if (c % 3 == 1) {
-    return '<div class="m1">謝謝您的指教，我們會盡快請專人回復您</div><br>';
+    return '<div class="ans1">感謝您的意見，我們會盡快請專人回復您</div><br>';
   }
 
   if (c % 3 == 2) {
-    return '<div class="m1">忙線中，請稍後再試。</div><br>';
+    return '<div class="ans1">忙線中，請稍後再試。</div><br>';
   }
 }
 
