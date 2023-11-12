@@ -121,7 +121,7 @@
 
 @media only screen and (max-width: 1200px) {
   #chat-icon,
-  #chat-text,
+  #chat-container,
   #phone-icon {
     display: none;
   }

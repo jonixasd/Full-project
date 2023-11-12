@@ -65,7 +65,7 @@ $(document).ready(function () {
 // robot
 
 var r = true;
-$('#chat-container').delay(1000).fadeOut('slow');
+$('#chat-container').delay(500).fadeOut('slow');
 $('#chat-icon').click(function () {
   ch();
 });
