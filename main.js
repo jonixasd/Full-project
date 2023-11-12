@@ -104,7 +104,7 @@ function app() {
     return '<div class="ans1">歡迎來到客服專區，有任何問題都歡迎詢問，若無法百分百滿足您的問題，還請致電或電郵告知。</div><br>';
   }
   if (c % 3 == 1) {
-    return '<div class="ans1">感謝您的意見，我們會盡快請專人回復您</div><br>';
+    return '<div class="ans1">感謝您的意見，我們會盡快請專人回覆您</div><br>';
   }
 
   if (c % 3 == 2) {

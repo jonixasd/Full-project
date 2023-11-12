@@ -17,6 +17,25 @@
   transition: 0.2s ease-in-out;
   box-shadow: #222 0px 15px 29px 0px;
 }
+#phone-icon {
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  bottom: 100px;
+  background-color: #e69827;
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: #fefae0e8 0px 20px 50px 0px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#phone-icon:hover {
+  transform: translate(0, -3px);
+  transition: 0.2s ease-in-out;
+  box-shadow: #fefae0 0px 15px 29px 0px;
+}
 
 #chat-container {
   display: block;
@@ -102,7 +121,8 @@
 
 @media only screen and (max-width: 1200px) {
   #chat-icon,
-  #chat-text {
+  #chat-text,
+  #phone-icon {
     display: none;
   }
 }
