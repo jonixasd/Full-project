@@ -831,7 +831,7 @@ main {
 }
 
 .description:hover {
-  box-shadow: #2222225d 0px 7px 29px 0px;
+  transform: rotate(1.5deg);
   transition: 0.3s ease-in-out;
 }
 /* promo */

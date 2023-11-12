@@ -111,25 +111,3 @@ function app() {
     return '<div class="ans1">忙線中，請稍後再試。</div><br>';
   }
 }
-
-// Smooth scroll
-
-// const body = document.body,
-//   scrollWrap = document.getElementsByClassName('smooth-scroll')[0],
-//   height = scrollWrap.getBoundingClientRect().height - 0.5,
-//   speed = 0.04;
-
-// var offset = 0;
-
-// body.style.height = Math.floor(height) + 'px';
-
-// function smoothScroll() {
-//   offset += (window.pageYOffset - offset) * speed;
-
-//   var scroll = 'translateY(-' + offset + 'px) translateZ(0)';
-//   scrollWrap.style.transform = scroll;
-
-//   callScroll = requestAnimationFrame(smoothScroll);
-// }
-
-// smoothScroll();
