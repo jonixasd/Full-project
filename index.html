@@ -8,7 +8,6 @@
     <title>寶島慢播市集</title>
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="robot.css" type="text/css" />
-    <link rel="stylesheet" href="reset.css" type="text/css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
     <!-- Animate.css -->
@@ -220,7 +219,7 @@
         <div class="carousel-item active slide-1">
           <div class="item-text animate__animated animate__fadeIn">
             <div class="item-text-content">
-              <div class="heading-first">
+              <div class="heading">
                 <p><span>秋意</span>濃情・心隨秋飄</p>
               </div>
               <div class="caption">
@@ -241,7 +240,7 @@
         <div class="carousel-item slide-2">
           <div class="item-text animate__animated animate__fadeIn">
             <div class="item-text-content">
-              <div class="heading-sec">
+              <div class="heading">
                 <p>
                   <span>ChiiiiilL</span><br />
                   日式市集
@@ -286,41 +285,39 @@
     </div>
     <main>
       <div class="intro-section-holder" id="Introduction">
-        <div class="intro-wrapper">
-          <div class="intro">
-            <div class="intro-image">
-              <div class="owl-carousel owl-theme">
-                <div class="item">
-                  <img src="./Gallery/market_pic10.JPG" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./Gallery/market_pic11.JPG" alt="" />
-                </div>
-                <div class="item">
-                  <img src="./Gallery/market_pic13.JPG" alt="" />
-                </div>
+        <div class="intro">
+          <div class="intro-image">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="./Gallery/market_pic10.JPG" alt="" />
+              </div>
+              <div class="item">
+                <img src="./Gallery/market_pic11.JPG" alt="" />
+              </div>
+              <div class="item">
+                <img src="./Gallery/market_pic13.JPG" alt="" />
               </div>
             </div>
-            <div class="intro-text">
-              <div class="intro-text-wrapper">
-                <h6>ChiiiiilL 日式市集</h6>
-                <h1><span>秋日</span>將至・微風徐徐</h1>
-                <p>
-                  在這個特別的市集中，<br />你可以體驗油畫、參加音樂會、甚至和不同國家的人同樂，
-                  <br />在這裡，您將沉浸在秋天的氛圍中，
-                  感受微風拂過皮膚的清涼，<br />
-                  在充滿著秋季美食、手工藝品和音樂表演中享受秋天的樂趣。<br />
-                </p>
-                <div class="intro-buttons">
-                  <a href="#Information" class="booking-button">馬上報名</a>
-                  <a href="#Schedule" class="nextPage-button"
-                    ><i class="fas fa-arrow-down fa-lg"></i
-                  ></a>
-                </div>
-                <div class="dragRemind">
-                  <i class="far fa-hand-paper fa-2x" style="color: #222"></i>
-                  <p>拖曳觀看更多圖片</p>
-                </div>
+          </div>
+          <div class="intro-text">
+            <div class="intro-text-wrapper">
+              <h6>ChiiiiilL 日式市集</h6>
+              <h1><span>秋日</span>將至・微風徐徐</h1>
+              <p>
+                在這個特別的市集中，<br />你可以體驗油畫、參加音樂會、甚至和不同國家的人同樂，
+                <br />在這裡，您將沉浸在秋天的氛圍中，
+                感受微風拂過皮膚的清涼，<br />
+                在充滿著秋季美食、手工藝品和音樂表演中享受秋天的樂趣。<br />
+              </p>
+              <div class="intro-buttons">
+                <a href="#Information" class="booking-button">馬上報名</a>
+                <a href="#Schedule" class="nextPage-button"
+                  ><i class="fas fa-arrow-down fa-lg"></i
+                ></a>
+              </div>
+              <div class="dragRemind">
+                <i class="far fa-hand-paper fa-2x" style="color: #222"></i>
+                <p>拖曳觀看更多圖片</p>
               </div>
             </div>
           </div>
@@ -428,7 +425,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="line-2"><div class="D-line-2"></div></div> -->
       <div class="container-cart" id="Information">
         <div class="card-cart">
           <div class="card-cart-title">
@@ -574,8 +570,7 @@
           </div>
         </div>
       </div>
-      <div class="line-3"><div class="D-line-3" id="Traffic"></div></div>
-      <div class="traffic-container">
+      <div class="traffic-container" id="Traffic">
         <div class="traffic-text">
           <h1>交通資訊</h1>
           <p>我們提供完整的交通訊息，讓您順利找到我們</p>
@@ -715,11 +710,7 @@
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         本站使用 CSS + jQuery 設計，響應 RWD 設計 ©2023-寶島漫播市集
       </div>
-      <!-- Copyright -->
     </footer>
-    <!-----======service客服============------>
-
-    <!--1.圖示(甚麼都不做也看的到)---->
     <div id="chat-icon">
       <i class="fas fa-headset fa-3x" style="color: #404040"></i>
     </div>
@@ -730,10 +721,7 @@
         ><i class="fas fa-mobile fa-3x" style="color: #fefae0"></i
       ></a>
     </div>
-
-    <!--2.聊天紀錄(點擊才看的到)---->
     <div id="chat-container">
-      <!--初始對話---->
       <div id="chat-text">
         <div class="ans1">歡迎光臨，有任何問題都可以問我喔。</div>
         <br />
