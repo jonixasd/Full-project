@@ -15,6 +15,7 @@ function showDropdown() {
   const CloseBtn = document.querySelector('.close_btn,.close_btn i');
   CloseBtn.style.display = 'block';
 }
+
 function hideDropdown() {
   const Dropdown = document.querySelector('.dropdown_menu');
   Dropdown.style.display = 'none';
