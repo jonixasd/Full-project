@@ -174,11 +174,8 @@ header {
   /* backdrop-filter: blur(10px); */
   height: 380px;
   width: 100%;
-  box-shadow: #2222227e 0px 40px 29px 0px;
-}
-
-.dropdown_menu ul {
   text-align: center;
+  box-shadow: #2222227e 0px 40px 29px 0px;
 }
 
 .dropdown_menu li {
