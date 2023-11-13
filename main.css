@@ -571,17 +571,17 @@ main {
   color: white;
 }
 
-.drapRemind {
+.dragRemind {
   margin-top: 30px;
   width: 400px;
   height: 60px;
   display: flex;
   align-items: center;
 }
-.drapRemind i {
+.dragRemind i {
   margin-right: 10px;
 }
-.drapRemind p {
+.dragRemind p {
   font-weight: 600;
 }
 
