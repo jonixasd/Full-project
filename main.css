@@ -206,7 +206,6 @@ header {
   right: 0;
   bottom: 0;
   z-index: 15;
-  display: -ms-flexbox;
   display: flex;
   gap: 15px;
   justify-content: center;
