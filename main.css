@@ -198,27 +198,6 @@ header {
   color: #404040c0;
   transition: 0.2s ease-in-out_;
 }
-
-.login-btn-drop {
-  padding: 10px 40px 10px 40px;
-  border-radius: 8px;
-  background-color: #28a745;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
-  color: var(--clr-white-text);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 5px;
-}
-
-.login-btn-drop:hover {
-  text-decoration: none;
-  color: var(--clr-white-text);
-  background-color: #208638;
-  transform: translate(0, -3px);
-  transition: 0.3s ease;
-  box-shadow: #2086388e 0px 15px 29px 0px;
-}
 /* navbar dropdown ↑ */
 /* carousel ↓ */
 
