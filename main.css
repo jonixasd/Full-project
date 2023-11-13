@@ -213,6 +213,9 @@ header {
   list-style: none;
   margin: 0px 60px 60px 0px;
 }
+.carousel-lists .active {
+  opacity: 1;
+}
 
 .carousel-lists > li {
   opacity: 0.8;
