@@ -1,9 +1,9 @@
 // navbar sticky affect
 
-window.addEventListener('scroll', function () {
-  var stickyNavbar = document.querySelector('.site-header');
-  stickyNavbar.classList.toggle('sticky', window.scrollY > 0);
-});
+// window.addEventListener('scroll', function () {
+//   var stickyNavbar = document.querySelector('.site-header');
+//   stickyNavbar.classList.toggle('sticky', window.scrollY > 0);
+// });
 
 // nav responsive
 
