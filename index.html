@@ -16,6 +16,7 @@
     <!-- ! Loading order:jquery > popper > bootstrap -->
   </head>
   <body>
+    <!-- navbar-bg -->
     <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="navbar-bg">
       <a class="navbar-brand font-weight-bolder title" href="#"
         ><img
@@ -71,6 +72,7 @@
             >
           </li>
         </ul>
+        <!-- login-btn -->
         <button class="btn btn-outline-success my- my-sm-0" id="login-btn" data-toggle="modal"
         data-target="#loginModal">
           登入
@@ -363,99 +365,59 @@
       <div class="cart-section" id="Information">
         <div class="cart-card">
           <div class="cart-card-title">
-            <h3>活動預約頁面</h3>
+            <h2>活動預約頁面</h2>
             <p>
               這裡，您可以輕鬆預約我們精心策劃的各種活動，無論是文化體驗、冒險旅行、藝術工作坊還是特別活動，我們都有豐富的選擇等待著您。
             </p>
           </div>
-          <div class="item-section">
-            <div class="description">
-              <div class="cart-text">
-                <div class="cart-img"></div>
-                <div class="promo">
-                  <h2>歷史之旅: 歷史故事講解</h2>
-                  <p>
-                    這是一次穿越時光的機會，讓你沉浸在城市的過去，聆聽傳說和故事，感受歷史的魅力。
-                  </p>
-                </div>
-                <div class="cart-btn">
-                  <button
-                    type="button"
-                    class="btn btn-success btn-block promo-button"
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                    onclick="cartAlert()"
-                  >
-                    <p>報名</p>
-                  </button>
-                </div>
+          <div class="card-deck">
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">歷史之旅: 歷史故事講解</h5>
+                <p class="card-text mb-3 mt-3">這是一次穿越時光的機會，讓你沉浸在城市的過去，聆聽傳說和故事，感受歷史的魅力。</p>
+                  <a  href="#" 
+                      class="btn btn-success mb-3 pr-4 pl-4" 
+                      id="cart-btn" 
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                      onclick="cartAlert()">報名</a>
               </div>
             </div>
-            <div class="description">
-              <div class="cart-text">
-                <div class="cart-img"></div>
-                <div class="promo">
-                  <h2>大自然音樂會:音樂饗宴</h2>
-                  <p>
-                    你將享受到大自然音樂會的精彩表演。音樂家們將以大自然為靈感，演奏悅耳的音樂!
-                  </p>
-                </div>
-                <div class="cart-btn">
-                  <button
-                    type="button"
-                    class="btn btn-success btn-block promo-button"
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">大自然音樂會:音樂饗宴</h5>
+                <p class="card-text mb-3 mt-3">你將享受到大自然音樂會的精彩表演。音樂家們將以大自然為靈感，演奏悅耳的音樂!</p>
+                <a  href="#" 
+                    class="btn btn-success mb-3 pr-4 pl-4" 
+                    id="cart-btn" 
                     data-toggle="modal"
                     data-target="#exampleModalCenter"
-                    onclick="cartAlert()"
-                  >
-                    <p>報名</p>
-                  </button>
-                </div>
+                    onclick="cartAlert()">報名</a>
               </div>
             </div>
-            <div class="description">
-              <div class="cart-text">
-                <div class="cart-img"></div>
-                <div class="promo">
-                  <h2>街頭藝術表演:藝術盛會</h2>
-                  <p>
-                    街頭藝術家們將在我們的舞台上進行現場表演，包括塗鴉、街舞和音樂演出。
-                  </p>
-                </div>
-                <div class="cart-btn">
-                  <button
-                    type="button"
-                    class="btn btn-success btn-block promo-button"
-                    data-toggle="modal"
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">街頭藝術表演:藝術盛會</h5>
+                <p class="card-text mb-3 mt-3">街頭藝術家們將在我們的舞台上進行現場表演，包括塗鴉、街舞和音樂演出。</p>
+                  <a href="#" class="btn btn-success mb-3 pr-4 pl-4" id="cart-btn" data-toggle="modal"
                     data-target="#exampleModalCenter"
-                  >
-                    <p>報名</p>
-                  </button>
-                </div>
+                    onclick="cartAlert()">報名</a>
               </div>
             </div>
-            <div class="description">
-              <div class="cart-text">
-                <div class="cart-img"></div>
-                <div class="promo">
-                  <h2>多元文化探索:跨界新境</h2>
-                  <p>
-                    我們將為您呈現多國文化的舞蹈和音樂表演，展示不同國家的藝術風格。
-                  </p>
-                </div>
-                <div class="cart-btn">
-                  <button
-                    type="button"
-                    class="btn btn-success btn-block promo-button"
-                    data-toggle="modal"
+            <div class="card" id="custom-card">
+              <img class="card-img-top" src="./Gallery/market_pic04.JPG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">多元文化探索:跨界新境</h5>
+                <p class="card-text mb-3 mt-3">我們將為您呈現多國文化的舞蹈和音樂表演，展示不同國家的藝術風格。</p>
+                  <a href="#" class="btn btn-success mb-3 pr-4 pl-4" id="cart-btn" data-toggle="modal"
                     data-target="#exampleModalCenter"
-                    onclick="cartAlert()"
-                  >
-                    <p>報名</p>
-                  </button>
-                </div>
+                    onclick="cartAlert()">報名</a>
               </div>
             </div>
+          </div>
             <div
               class="modal fade"
               id="exampleModalCenter"
@@ -498,16 +460,16 @@
         </div>
       </div>
       <div class="traffic-section" id="Traffic">
-        <div class="traffic-text">
+        <div class="traffic-title">
           <h1>交通資訊</h1>
           <p>我們提供完整的交通訊息，讓您順利找到我們</p>
         </div>
         <div class="traffic-wrapper">
-          <div class="traffic-cards">
-            <div class="traffic-card-1">
+          <div class="traffic-card-group">
+            <div class="traffic-card">
               <div class="card-title">
                 <i class="fas fa-train fa-3x" style="color: #404040"></i>
-                <h3>高鐵</h3>
+                <h3><b>高鐵</b></h3>
               </div>
               <div class="card-caption">
                 <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
@@ -519,11 +481,11 @@
                 </ul>
               </div>
             </div>
-            <div class="traffic-card-2">
+            <div class="traffic-card">
               <div class="card-title">
                 <!--  -->
                 <i class="fas fa-subway fa-3x" style="color: #404040"></i>
-                <h3>台鐵</h3>
+                <h3><b>台鐵</b></h3>
               </div>
               <div class="card-caption">
                 <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
@@ -532,11 +494,11 @@
                 </ul>
               </div>
             </div>
-            <div class="traffic-card-3">
+            <div class="traffic-card">
               <div class="card-title">
                 <!--  -->
                 <i class="fas fa-bus fa-3x" style="color: #404040"></i>
-                <h3>公車</h3>
+                <h3><b>公車</b></h3>
               </div>
               <div class="card-caption">
                 <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
@@ -547,12 +509,11 @@
               </div>
             </div>
           </div>
-          <div class="traffic-cards-2">
-            <div class="traffic-card-4">
+          <div class="traffic-card-group" id="group-2">
+            <div class="traffic-card">
               <div class="card-title">
-                <!--  -->
                 <i class="fas fa-biking fa-3x" style="color: #404040"></i>
-                <h3>臺中 I-bike 鄰近站點</h3>
+                <h3><b>臺中 I-bike 鄰近站點</b></h3>
               </div>
               <div class="card-caption">
                 <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
@@ -564,22 +525,22 @@
                 </ul>
               </div>
             </div>
-            <div class="traffic-card-5">
+            <div class="traffic-card">
               <div class="card-title">
                 <!--  -->
                 <i class="fas fa-car fa-3x" style="color: #404040"></i>
-                <h3>自行開車</h3>
+                <h3><b>自行開車</b></h3>
               </div>
               <div class="card-caption">
                 <i class="fas fa-caret-right fa-2x" style="color: #e4a029"></i>
                 <ul>
                   <li>
-                    <span>南下</span>
+                    <span><b>南下</b></span>
                     中山五權交流道→五權西路→五權路→林森路→府後街口<br />
                     (園區旁 備有大型公有停車場)
                   </li>
                   <li>
-                    <span>北上</span>
+                    <span><b>北上</b></span>
                     中港交流道→台灣大道→英才路→林森路→府後街口<br />
                     (園區旁備有 大型公有停車場)
                   </li>

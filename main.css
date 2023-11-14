@@ -427,7 +427,7 @@ main {
   font-size: 2.3em;
   font-weight: 600;
   letter-spacing: 5px;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 .schedule-title p {
   margin: 0;
@@ -520,12 +520,24 @@ main {
   }
 }
 
-/* ! cart section ↓ */
+/* cart section */
 
-.cart-section * {
-  margin: 0;
-  padding: 0;
-  color: var(--clr-black-text);
+#custom-card {
+  background-color: var(--clr-main-bg);
+  border: 0;
+  border-radius: 15px;
+  box-shadow: #22222241 0px 7px 29px 0px;
+  transition: 0.3s ease-in-out;
+}
+
+#custom-card:hover {
+  transform: rotate(1.5deg);
+  transition: 0.3s ease-in-out;
+}
+
+#custom-card img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .cart-section {
@@ -542,96 +554,42 @@ main {
 }
 
 .cart-card {
-  background-color: transparent;
   width: 80%;
-  height: 80%;
+  height: 100%;
 }
 
 .cart-card-title {
-  padding: 40px 0px 40px 40px;
+  padding: 40px 0px 40px 0px;
+  letter-spacing: 3px;
+}
+.cart-card-title p {
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 
-.cart-card-title h3 {
+.cart-card-title h2 {
+  font-weight: bold;
+  margin: 0px 0px 20px 0px;
+}
+
+.card-body h5 {
   color: var(--clr-black-text);
   font-weight: 600;
-  font-size: 2.3em;
-  margin: 20px 0px 20px 0px;
+  font-size: 1.5em;
   letter-spacing: 3px;
 }
 
-.cart-card-title p {
+.card-text {
   color: var(--clr-black-text);
   font-size: 18px;
   letter-spacing: 2px;
 }
 
-.item-section {
-  width: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.description {
-  width: 340px;
-  height: 500px;
-  border-radius: 15px;
-  background-color: var(--clr-main-bg);
-  box-shadow: #22222241 0px 7px 29px 0px;
-  transition: 0.3s ease-in-out;
-}
-
-.description:hover {
-  transform: rotate(1.5deg);
-  transition: 0.3s ease-in-out;
-}
-/* promo */
-
-.promo {
-  width: fit-content;
-  height: fit-content;
-  margin: 0px 30px 0px 30px;
-}
-
-.promo h2 {
-  color: var(--clr-black-text);
-  font-weight: 600;
-  font-size: 22px;
-  text-align: left;
-  letter-spacing: 3px;
-}
-
-.promo p {
-  color: var(--clr-black-text);
-  font-size: 16px;
-  letter-spacing: normal;
-  line-height: 150%;
-  font-weight: 500;
-  text-align: left;
-  margin: 20px 0px 20px 0px;
-  letter-spacing: 3px;
-}
-
-.cart-btn {
-  width: 100px;
-  margin-left: 30px;
-}
-
-.cart-btn p {
+#cart-btn {
   color: white;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 3px;
-}
-
-.cart-img {
-  height: 250px;
-  margin-bottom: 20px;
-  background-image: url(./Gallery/market_pic04.JPG);
-  background-size: cover;
 }
 
 /* traffic section */
@@ -647,33 +605,20 @@ main {
   justify-content: center;
   align-items: center;
 }
-.traffic-text {
+.traffic-title {
   margin: 40px 0px 40px 0px;
   text-align: center;
 }
 
-.traffic-text h1 {
+.traffic-title h1 {
   font-weight: 600;
   letter-spacing: 3px;
-  line-height: 40px;
 }
 
-.traffic-text p {
+.traffic-title p {
   font-size: 18px;
   letter-spacing: 3px;
-  line-height: 40px;
   background: linear-gradient(to bottom, transparent 40%, #e4a02950 60%);
-}
-
-.card-title {
-  display: flex;
-  align-items: center;
-}
-
-.card-title h3 {
-  margin-left: 15px;
-  font-weight: 600;
-  letter-spacing: 3px;
 }
 
 .traffic-wrapper {
@@ -685,8 +630,7 @@ main {
   flex-wrap: wrap;
 }
 
-.traffic-cards,
-.traffic-cards-2 {
+.traffic-card-group {
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -694,34 +638,40 @@ main {
   flex-wrap: wrap;
   justify-content: start;
 }
-.traffic-cards-2 {
+
+#group-2 {
   gap: 80px;
 }
 
-.traffic-card-1,
-.traffic-card-2,
-.traffic-card-3 {
+.traffic-card {
   width: 450px;
 }
 
 @media only screen and (max-width: 500px) {
-  .traffic-card-1,
-  .traffic-card-2,
-  .traffic-card-3 {
+  .traffic-card {
     width: 350px;
   }
 }
 
+.card-title {
+  display: flex;
+  align-items: center;
+}
+
+.card-title h3 {
+  margin-left: 15px;
+  letter-spacing: 3px;
+}
+
 .card-caption ul li {
   list-style: none;
-  margin: 20px 0px 20px 00px;
+  margin: 20px 0px 20px 0px;
   letter-spacing: 3px;
   font-size: 16px;
 }
 
 .card-caption ul li span {
   font-size: 18px;
-  font-weight: 600;
   color: #e4a029;
 }
 
