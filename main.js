@@ -33,6 +33,9 @@ function loginAlert() {
 function Activity() {
   alert('您已成功報名此活動! 請注意活動參加時間，詳情請看活動檔期。');
 }
+function social() {
+  alert('請重連網路後再試。');
+}
 
 //Owl carousel
 
@@ -46,7 +49,7 @@ $('.owl-carousel').owlCarousel({
       items: 1,
     },
     600: {
-      items: 3,
+      items: 1,
     },
     1800: {
       items: 1,

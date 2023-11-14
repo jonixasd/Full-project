@@ -97,7 +97,6 @@
                       <input
                         type="email"
                         class="form-control"
-                        id="email1"
                         placeholder="帳號"
                       />
                     </div>
@@ -105,13 +104,12 @@
                       <input
                         type="password"
                         class="form-control"
-                        id="password1"
                         placeholder="密碼"
                       />
                     </div>
                     <button
                       type="button"
-                      class="btn btn-success btn-block btn-round"
+                      class="btn btn-success btn-block btn-round font-weight-bold"
                       id="login-modal-btn"
                       data-dismiss="modal"
                       onclick="loginAlert()"
@@ -125,7 +123,6 @@
           </div>
         </div>
       </nav>
-      
     </header>
     <div
       id="carouselSlidesOnly"
@@ -158,7 +155,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active slide-1">
-          <div class="item-text animate__animated animate__fadeIn">
+          <div class="item-text">
             <div class="item-text-content">
               <div class="heading">
                 <p><span>秋意</span>濃情・心隨秋飄</p>
@@ -179,7 +176,7 @@
           </div>
         </div>
         <div class="carousel-item slide-2">
-          <div class="item-text animate__animated animate__fadeIn">
+          <div class="item-text">
             <div class="item-text-content">
               <div class="heading">
                 <p>
@@ -204,7 +201,7 @@
           </div>
         </div>
         <div class="carousel-item slide-3">
-          <div class="item-text animate__animated animate__fadeIn">
+          <div class="item-text">
             <div class="item-text-content">
               <div class="heading">
                 <p><span>寶島</span>慢播 假日市集</p>
@@ -225,7 +222,7 @@
       </div>
     </div>
     <main>
-      <div class="intro-section-holder" id="Introduction">
+      <div class="about-section" id="Introduction">
         <div class="intro">
           <div class="intro-image">
             <div class="owl-carousel owl-theme">
@@ -264,8 +261,7 @@
           </div>
         </div>
       </div>
-
-      <div class="banner-1">
+      <div class="bananer-1">
         <div class="banner-text-1">
           <h2>
             讓我們將生活以慢動作撥放，專注於身旁的各種細節。<br />這是一種生活方式，讓我們深刻地感受世界的美麗<br />
@@ -273,7 +269,7 @@
           </h2>
         </div>
       </div>
-      <div class="schedule-container" id="Schedule">
+      <div class="schedule-section" id="Schedule">
         <div class="schedule-wrapper">
           <div class="schedule-title">
             <h2>活動檔期</h2>
@@ -366,7 +362,7 @@
           </div>
         </div>
       </div>
-      <div class="container-cart" id="Information">
+      <div class="cart-section" id="Information">
         <div class="card-cart">
           <div class="card-cart-title">
             <h3>活動預約頁面</h3>
@@ -503,7 +499,7 @@
           </div>
         </div>
       </div>
-      <div class="traffic-container" id="Traffic">
+      <div class="traffic-section" id="Traffic">
         <div class="traffic-text">
           <h1>交通資訊</h1>
           <p>我們提供完整的交通訊息，讓您順利找到我們</p>
@@ -598,49 +594,46 @@
     </main>
     <footer id="Contact">
       <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4">
-            <h3 class="text-dark title">
-              <img src="./images-active/Logo.png" alt="" />
-              <span>寶島慢播市集</span>
-            </h3>
-            <span class="title-span">感謝您參加市集!</span><br />
-            <p class="title-p">
-              活動期間：2023 年10 月份，週五/週六/週日<br />
-              (每週五晚間18:00-22:00)(每週六日上午10:00 至下午21:00) <br />
-              活動地點： 台中市西區林森路33 號
-            </p>
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-12 mb-4 footer-text">
+              <img src="./images-active/Logo.png" alt="" class="footer-brand mr-2" width="75px" height="75px"/>
+              <span class="font-weight-bold footer-title">寶島慢播市集</span>
+              <p class="ml-2 mt-2">
+                歡迎追隨市集的官方社群，以便您收到最新的消息及各種活動優惠!
+                如有疑問或是任何意見，請洽詢我們的電話和電子信箱，我們會有專人為您服務，感謝!
+              </p>
+              <div class="social-media ml-2">
+                <a><i class="fab fa-facebook fa-2x" ></i></a>
+                <a><i class="fab fa-instagram fa-2x"></i></a>
+                <a><i class="fab fa-line fa-2x" ></i></a>
+              </div>
           </div>
-          <div class="col-lg-5 col-md-5 mb-2 contact">
-            <h5 class="mb-3 footer-link">聯繫方式</h5>
-            <ul class="list-unstyled mb-0">
+          <div class="col-lg-5 col-md-5 mb-2">
+            <h5 class="mb-3 mt-3 font-weight-bold contact">聯繫方式</h5>
+            <ul>
               <li class="mb-1 contact-link">
-                <i class="fas fa-phone"></i><span>電話：0947-917-747</span>
+                <div><i class="fas fa-phone"></i></div><span>電話：0947-917-747</span>
               </li>
               <li class="mb-1 contact-link">
-                <i class="fas fa-envelope"></i
-                ><span>電子郵件：service@citimambo.com</span>
+                <div><i class="fas fa-envelope"></i
+                ></div><span>電子郵件：service@citimambo.com</span>
               </li>
               <li class="mb-1 contact-link">
-                <i class="fas fa-desktop"></i
-                ><span>網站：www.citimambo.com</span>
+                <div><i class="fas fa-desktop"></i
+                ></div><span>網站：www.citimambo.com</span>
+              </li>
+              <li class="mb-1 contact-link">
+                <div><i class="fas fa-map-marked-alt"></i></div><span>活動期間：2023 年10 月份，週五/週六/週日<br />
+                  (每週五晚間18:00-22:00)(每週六日上午10:00 至下午21:00) <br />
+                  活動地點： 台中市西區林森路33 號</span>
               </li>
             </ul>
-            <div class="social-media">
-              <a href="#Contact"
-                ><i class="fab fa-facebook fa-2x" style="color: #ebebeb"></i
-              ></a>
-              <a href="#Contact"
-                ><i class="fab fa-instagram fa-2x" style="color: #ebebeb"></i
-              ></a>
-              <a href="#Contact"
-                ><i class="fab fa-line fa-2x" style="color: #ebebeb"></i
-              ></a>
-            </div>
+            
           </div>
         </div>
       </div>
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        
         本站使用 CSS + jQuery 設計，響應 RWD 設計 ©2023-寶島漫播市集
       </div>
     </footer>

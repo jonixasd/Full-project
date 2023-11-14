@@ -5,6 +5,7 @@
   text-decoration: none !important;
   list-style: none;
   box-sizing: border-box;
+  font-family: '文鼎中特黑 標準';
 }
 
 html {
@@ -59,7 +60,7 @@ main {
 /* carousel ↓ */
 .carousel-lists {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   z-index: 15;
 
@@ -68,7 +69,7 @@ main {
   gap: 15px;
 
   list-style: none;
-  margin: 0px 60px 60px 0px;
+  margin: 0px 0px 60px 60px;
 }
 
 .carousel-lists > li {
@@ -100,9 +101,8 @@ main {
 }
 
 .item-text {
-  height: 100%;
-  width: 100%;
-
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,6 +122,8 @@ main {
 .slide-1,
 .slide-2,
 .slide-3 {
+  display: flex;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -233,7 +235,7 @@ main {
 /*  carousel */
 /*  ↓ main page */
 
-.intro-section-holder {
+.about-section {
   width: 100%;
   height: 100%;
 
@@ -388,7 +390,7 @@ main {
 
 /* schedule section */
 
-.schedule-container {
+.schedule-section {
   width: 100%;
   height: 100%;
   background-color: var(--clr-sec-bg);
@@ -561,7 +563,7 @@ main {
   color: var(--clr-black-text);
 }
 
-.container-cart {
+.cart-section {
   background-image: url(./images-active/cart-section-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -671,7 +673,7 @@ main {
 
 /* traffic section */
 
-.traffic-container {
+.traffic-section {
   width: 100%;
   height: 100%;
   padding-bottom: 150px;
@@ -763,94 +765,48 @@ main {
 /* footer */
 footer {
   background-image: url(./images-active/foot-bg-v2.jpg);
-}
-
-footer > * {
   color: var(--clr-white-text);
 }
 
-.form-group,
-.footer-link,
-.title-p,
-.social-media {
-  margin-top: 15px;
+footer i {
+  margin: 0px 10px 10px 0px;
+  color: var(--clr-main-bg);
 }
-.footer-link,
-.form-group label,
-.title-span,
-.title span {
-  font-weight: bold;
-}
-footer .title img {
-  width: 75px;
-  height: 75px;
-}
-.title span {
-  font-size: 30px;
-  color: var(--clr-white-text);
-}
-.title-p {
+
+.footer-text p {
   font-size: 16px;
+  letter-spacing: 2px;
 }
-.title-span {
-  font-size: 25px;
-}
-
-.contact-link i {
-  margin-right: 20px;
+.footer-title {
+  font-size: 30px;
 }
 
-.social-media {
+.contact,
+.footer-title {
+  letter-spacing: 3px;
+}
+
+.contact-link {
   display: flex;
-  gap: 10px;
 }
-
 /* login modal */
 
-.container {
-  padding: 2rem 0rem;
-}
-
-#login-modal-content {
+#login-modal-content,
+#activity-content {
   background-color: var(--clr-main-bg);
 }
 
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 400px;
-
-    .modal-content {
-      padding: 1rem;
-    }
-  }
-}
-
-.modal-header {
-  .close {
-    margin-top: -1.5rem;
-  }
-}
-
-/* .form-title {
-  margin: -2rem 0rem 2rem;
-} */
-
 #login-form-title h4 {
   letter-spacing: 4px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 #login-modal-btn {
   font-size: 17px;
-  font-weight: bold;
   letter-spacing: 4px;
 }
 
 /* activity modal*/
-
-#activity-content {
-  background-color: var(--clr-main-bg);
-}
 
 #activity-title {
   font-weight: 600;
