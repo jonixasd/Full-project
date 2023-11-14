@@ -28,25 +28,26 @@ main {
 }
 
 #navbar-bg {
-  z-index: 9999;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   background-color: #fefae0;
-  padding: 8px 150px 8px 150px;
+  padding: 8px 180px 8px 180px;
   box-shadow: #222222a9 0px 15px 29px 0px;
 }
-.title {
+
+@media only screen and (max-width: 1180px) {
+  #navbar-bg {
+    padding: 8px 20px 8px 20px;
+  }
+}
+
+.title,
+.nav-link {
   letter-spacing: 3px;
 }
+
 .nav-link {
   font-size: 16px;
-  letter-spacing: 3px;
 }
-.nav-link i {
-  margin-right: 5px;
-}
+
 #login-btn {
   font-size: 18px;
   font-weight: 600;
@@ -54,8 +55,8 @@ main {
   border-radius: 8px;
   padding: 10px 40px 10px 40px;
 }
-/* carousel ↓ */
 
+/* carousel ↓ */
 .carousel-lists {
   position: absolute;
   right: 0;
@@ -830,14 +831,13 @@ footer .title img {
   }
 }
 
-.form-title {
+/* .form-title {
   margin: -2rem 0rem 2rem;
-}
+} */
 
-.form-title h4 {
-  font-size: 28px;
-  font-weight: 600;
+#login-form-title h4 {
   letter-spacing: 4px;
+  font-weight: 600;
 }
 
 #login-modal-btn {
