@@ -122,8 +122,6 @@ main {
 .slide-1,
 .slide-2,
 .slide-3 {
-  display: flex;
-  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
