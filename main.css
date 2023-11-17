@@ -458,6 +458,7 @@ main {
 
   display: flex;
   flex-direction: column;
+  /* ! */
   justify-content: left;
   align-items: baseline;
 
@@ -475,6 +476,8 @@ main {
   box-shadow: #fefae0b9 0px 7px 29px 5px;
   transition: 0.2s ease-in-out;
 }
+
+/* banner */
 
 .banner {
   display: flex;
