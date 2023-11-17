@@ -629,24 +629,24 @@ main {
   }
 }
 
-.card-title {
+.traffic-card-title {
   display: flex;
   align-items: center;
 }
 
-.card-title h3 {
+.traffic-card-title h3 {
   margin-left: 15px;
   letter-spacing: 3px;
 }
 
-.card-caption ul li {
+.traffic-card-caption ul li {
   list-style: none;
   margin: 20px 0px 20px 0px;
   letter-spacing: 3px;
   font-size: 16px;
 }
 
-.card-caption ul li span {
+.traffic-card-caption ul li span {
   font-size: 18px;
   color: #e4a029;
 }
