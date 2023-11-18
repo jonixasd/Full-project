@@ -581,17 +581,17 @@ main {
   justify-content: center;
   align-items: center;
 }
-.traffic-title {
+.traffic-section-title {
   margin: 40px 0px 40px 0px;
   text-align: center;
 }
 
-.traffic-title h1 {
+.traffic-section-title h1 {
   font-weight: 600;
   letter-spacing: 3px;
 }
 
-.traffic-title p {
+.traffic-section-title p {
   font-size: 18px;
   letter-spacing: 3px;
   background: linear-gradient(to bottom, transparent 40%, #e4a02950 60%);
