@@ -656,30 +656,90 @@ main {
 /* footer */
 footer {
   background-image: url(./images-active/foot-bg-v2.jpg);
-  color: var(--clr-white-text);
+  background-size: cover;
 }
 
-footer i {
-  margin: 0px 10px 10px 0px;
-  color: var(--clr-main-bg);
+footer * {
+  color: var(--clr-main-bg) !important;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  width: 70%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+  padding: 80px 0px 50px 0px;
+}
+
+.footer-title {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-title span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fefae0;
+  letter-spacing: 4px;
 }
 
 .social-media {
-  padding: 20px 0px 0px 0px;
+  display: flex;
+  gap: 15px;
+  margin-left: 10px;
 }
 
-.footer-title {
-  font-size: 30px;
-}
-
-.contact,
-.footer-title {
+.footer-text h5,
+.footer-links h5 {
+  font-size: 22px;
+  font-weight: bold;
   letter-spacing: 3px;
+  margin: 20px 0px 20px 0px;
 }
 
-.contact-link {
+.footer-text i {
+  padding: 0px 15px 10px 0px;
+}
+
+.footer-text li,
+.footer-links li {
+  padding: 0px 0px 5px 0px;
+}
+
+.footer-links li a:hover {
+  color: #fefae086 !important;
+}
+
+.declare {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22222223;
+}
+
+.declare p {
+  margin: 0;
+  color: var(--clr-main-bg);
+}
+
+.map {
   display: flex;
 }
+
 /* login modal */
 
 #login-modal-content,
