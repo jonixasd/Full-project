@@ -601,7 +601,7 @@ main {
   width: 80%;
   height: 60%;
   display: flex;
-  gap: 50px;
+  gap: 80px;
   justify-content: start;
   flex-wrap: wrap;
 }
