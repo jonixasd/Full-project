@@ -708,6 +708,7 @@ footer * {
   width: fit-content;
   height: fit-content;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 15px;
 }
@@ -761,7 +762,7 @@ footer * {
   color: var(--clr-main-bg);
 }
 
-.map {
+.full-column {
   display: flex;
 }
 
