@@ -97,7 +97,6 @@ main {
 
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: #222222b6 0px 15px 29px 0px;
 }
 
 .item-text {
@@ -183,7 +182,7 @@ main {
     font-size: 14px;
   }
 }
-
+/* ! */
 .btns {
   width: 172px;
   height: 50px;
