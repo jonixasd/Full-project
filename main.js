@@ -42,7 +42,7 @@ $(document).ready(function () {
 // robot
 
 var r = true;
-$('#chat-container').delay(500).fadeOut('fast');
+$('#chat-container').fadeOut('fast');
 $('#chat-icon').click(function () {
   ch();
 });
