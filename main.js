@@ -42,7 +42,7 @@ $(document).ready(function () {
 // robot
 
 var r = true;
-$('#chat-container').delay(500).fadeOut('slow');
+$('#chat-container').delay(500).fadeOut('fast');
 $('#chat-icon').click(function () {
   ch();
 });
@@ -87,4 +87,12 @@ function app() {
   if (c % 3 == 2) {
     return '<div class="ans1">忙線中，請稍後再試。</div><br>';
   }
+}
+
+function openChat() {
+  window.open(
+    'index.html',
+    '_blank',
+    'statusbar=no,menubar=yes,toolbar=yes,top=100,left=200,width=440px,height=732px'
+  );
 }
