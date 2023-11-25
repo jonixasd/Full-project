@@ -72,7 +72,6 @@ function appw() {
     e.scrollTop = e.scrollHeight;
     e.scrollLeft = e.scrollLeft;
   }, 500);
-  textarea;
 }
 
 function app() {
