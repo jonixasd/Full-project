@@ -68,6 +68,7 @@ function keyin() {
 function appw() {
   setTimeout(function () {
     $('#chat-text').append(app());
+    // !importent
     var e = document.getElementById('textarea');
     e.scrollTop = e.scrollHeight;
     e.scrollLeft = e.scrollLeft;
